@@ -49,7 +49,7 @@ body {
 }
 
 .button {
-    background-color: transparent; /* 버튼이 안 투명해짐*/
+    background-color: transparent; /* 버튼이 안 투명해지는데 이유를 모르겠어요. */
     border: none;
     color: #000;
     cursor: pointer;
