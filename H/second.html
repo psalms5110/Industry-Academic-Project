@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post</title>
+    <style>
+        header{
+            margin: 100px;
+        }
+        nav {
+            background-color:#cfdff5ee ;
+            width: 100px;
+            height: 500px;
+            float: left;
+            position: sticky;
+        }
+        section{
+            margin-left:130px;
+        }
+        article{
+            margin: 100px;
+        }
+        /* 프로필 이미지 오른쪽 */
+        .profile-image {
+            float: right; /* 오른쪽으로 치우치도록 설정 */
+            margin-right: 0px; /* 이미지 오른쪽 여백 추가 */
+            max-width: 50%; /* 이미지의 최대 너비를 지정합니다. */
+            height: auto; /* 이미지의 높이를 자동으로 조정합니다. */
+        }
+         /* 검색창 스타일 */
+         .search-container {
+            float: right;
+            padding: 14px 20px;
+            margin-top: 0px; /* 이미지와의 간격 조정 */
+        }
+        .img1{
+            max-width: 400px;
+            height: auto;
+        }
+        .down-buttons {
+            display: flex;
+            justify-content: center;
+        }
+        /* 댓글 */
+        .container{
+            display: flex;
+            justify-content: center;
+            margin: 100px;
+            background-color: #cfdff5ee;
+            width: 80%;
+        }
+        .comment{
+            width: 100%;
+        }
+        .comment-count{
+            margin-bottom: 10px;
+        }
+        .comment-input{
+            width: 50%;
+            height: 3.3em;
+        }
+        .submit{
+            background-color: rgb(0,128,255);
+            width: 5.5em;
+            height:3.3em;
+            font-size: 15px;
+            font-weight: bold;
+            color:aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- 검색창 -->
+    <div class="search-container">
+        <input type="text" placeholder="검색...">
+        <button type="submit">검색</button>
+    </div>
+    <!-- 프로필 이미지 -->
+    <img class="profile-image" src="your-image.jpg" alt="Profile Image">
+    </header>
+    <!-- 내용 -->
+    <h5><a href="#">큰 카테고리 </a>> <a href="#">세부 카테고리 </a></h5>
+    <h1>자세한 내용/제목</h1>
+    <!-- 목차 목록 -->
+    <!-- 네비게이션 바 -->
+    <nav>
+        <p>[목차]</p>
+        <ol>
+        <li><a href="#01">개요</a><br/></li>
+        <li><a href="#02">내용</a><br/></li>
+        <li><a href="#03">세부1</a><br/></li>
+        <li><a href="#04">세부2</a><br/></li>
+        </ol>
+    </nav>
+    <section>
+        <article>
+            <div class="main1">
+                <img class="img1" src="main1.jpg" alt="main1">
+                <p>hello world! hello world! hello world! hello world! hello world! hello world! hello world! 
+                    hello world! hello world! hello world! hello world! hello world! hello world! hello world! 
+                </p>
+            </div>
+            <div class="main2">
+                <h3> < 내용 ></h3>
+                <p> whatrudoing whatrudoing whatrudoing whatrudoing whatrudoing whatrudoing whatrudoing whatrudoing whatrudoing
+                    whatrudoing whatrudoing whatrudoing whatrudoing whatrudoing whatrudoing whatrudoing whatrudoing
+                </p>
+                <img class="img2" src="main2.jpg" alt="main2">
+                <ol>
+                    <li>세부내용</li>
+                    <p> whatrudoing whatrudoing whatrudoing whatrudoing whatrudoing whatrudoing
+                        whatrudoing whatrudoing whatrudoing
+                    </p>
+                    <li>세부내용2</li>
+                    <p> whatrudoing whatrudoing whatrudoing whatrudoing whatrudoing whatrudoing
+                        whatrudoing whatrudoing whatrudoing
+                    </p>
+                </ol>
+            </div>
+        </article>
+        <div class="down-buttons">
+            <button><img src="추천.jpg" alt="thumbsup"> 추천</button>
+            <button><img src="저장.jpg" alt="save">저장</button>
+        </div>
+        <div class="container">
+        <div id="comment">
+            <div id="comment-count">댓글 <span id="count">0</span></div>
+            <input id="comment-input" placeholder="댓글을 입력해주세요.">
+            <button id="submit">작성</button>
+        </div>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+</html>
