@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>ARES</title>
-    <link href="css/index.css" rel="stylesheet">
+    <link href="CSS/index.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
     <div class="container">
         <div class="logo">
-            <img src="css/image/logo.png" alt="ARES 로고">
+            <img src="css/image/logo.png" alt="TEST INDEX">
         </div>
         <div class="search-container">
     <button type="submit" class="search-btn">
