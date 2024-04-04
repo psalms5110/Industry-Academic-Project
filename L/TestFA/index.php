@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <div class="logo">
-            <img src="css/image/logo.png" alt="ARES 로고">
+            <img src="css/image/logo.png" alt="TEST INDEX">
         </div>
         <div class="search-container">
     <button type="submit" class="search-btn">
