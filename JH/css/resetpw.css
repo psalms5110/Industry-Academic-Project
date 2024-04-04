@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('image/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0; 
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 456px;
+    height: 337px;
+    margin: auto;
+    background-color: #EDF7FD;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline : solid 2px #CFE1EB;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#current_password{
+    width: 300px;
+    height: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+}
+
+.new_password p {
+    margin: 0;
+    padding: 0;
+}
+
+.new_password input {
+    width: 300px;
+    height: 10px;
+    padding: 10px;
+    margin: 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+}
+
+.new_password input[type="submit"] {
+    margin-top: 20px;
+    height: 50px;
+    width: 100%;
+    background-color: #B6D7EB;
+    border: 1px solid #96B6CA;
+    border-radius: 3px;
+    color: #8C8C8C;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.new_password input[type="submit"]:hover {
+    background-color: #1A6A9E;
+}
