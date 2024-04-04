@@ -1,14 +1,5 @@
 <?php
-$host = 'localhost';
-$dbname = 'member';
-$username = 'root';
-$password = 'ares123';
-
-$conn = new mysqli($host, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-    die("연결 실패: " . $conn->connect_error);
-}
+require 'DB/db.php'; // DB/db.php 파일을 포함.
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = mysqli_real_escape_string($conn, trim($_POST['name']));
@@ -36,6 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $conn->close();
 }
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
