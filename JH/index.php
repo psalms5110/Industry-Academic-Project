@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>ARES</title>
@@ -18,7 +18,7 @@
     <input type="search" name="search" placeholder="검색어, 태그, 콘텐츠를 검색하세요" class="search-input">
 </div>
         <div>
-            <button onclick="location.href='login.php'" class="button">로그인</button>
+            <button onclick="location.href='login.php'" class="button">로그인</button> |
             <button onclick="location.href='signup.php'" class="button">회원가입</button>
         </div>
     </div>

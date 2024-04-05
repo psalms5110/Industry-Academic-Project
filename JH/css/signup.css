@@ -38,6 +38,7 @@ body {
     align-items: center;
 }
 .form-group-email button {
+    margin-top: 10px;
     background-color: #B6D7EB;
     border: 1px solid #96B6CA;
     cursor: pointer;
@@ -87,7 +88,7 @@ button[type="submit"]:hover {
 }
 
 .form-group label {
-    margin-right: 30px;
+    margin-right: 60px;
     margin-left: 5px;
 }
 

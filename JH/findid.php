@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Find ID</title>
+    <title>Login</title>
     <link href="../css/findid.css" rel="stylesheet">
 </head>
 <body> 
@@ -28,4 +28,3 @@
     </div>
 </body>
 </html>
-

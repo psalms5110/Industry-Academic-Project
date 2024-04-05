@@ -64,6 +64,7 @@ body {
     color: #8C8C8C;
     cursor: pointer;
 }
+
 .login-form input[type="submit"]:hover {
     background-color: #1A6A9E;
 }

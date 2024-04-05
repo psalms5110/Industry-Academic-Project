@@ -1,9 +1,14 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('image/background.png'); 
+    background-image: url('image/background.png');
     background-size: cover;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-position: center;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .container {
     display: flex;
@@ -49,7 +54,7 @@ body {
 }
 
 .button {
-    background-color: transparent; /* 버튼이 안 투명해지는데 이유를 모르겠어요. */
+    background-color: transparent;
     border: none;
     color: #000;
     cursor: pointer;
