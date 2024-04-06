@@ -1,41 +1,7 @@
 <?php
-session_start();
+session_start();  // 세션 시작
+include 'DB/logindb.php';  // DB 연결을 위한 db.php 파일을 포함.
 
-$host = 'localhost';
-$dbname = 'member';
-$username = 'root';
-$password = 'ares123';
-
-$conn = new mysqli($host, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-    die("연결 실패: " . $conn->connect_error);
-}
-
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $id = mysqli_real_escape_string($conn, $_POST['id']);
-    $pw = mysqli_real_escape_string($conn, $_POST['pw']);
-
-    $sql = "SELECT id, username, password FROM users WHERE username = '$id'";
-    $result = $conn->query($sql);
-
-    if ($result->num_rows > 0) {
-        $row = $result->fetch_assoc();
-        if (password_verify($pw, $row['password'])) {
-            $_SESSION['loggedin'] = true;
-            $_SESSION['username'] = $row['username'];
-            $_SESSION['id'] = $row['id'];
-
-            header("Location: board.php");
-            exit;
-        } else {
-            echo "<script>alert('비밀번호가 일치하지 않습니다.'); window.location.href='login.php';</script>";
-        }
-    } else {
-        echo "<script>alert('아이디가 존재하지 않습니다.'); window.location.href='login.php';</script>";
-    }
-    $conn->close();
-}
 ?>
 
 <!DOCTYPE html>
@@ -43,26 +9,26 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <link href="../css/login.css" rel="stylesheet">
+    <link href="../css/login.css" rel="stylesheet">  <!-- 로그인 페이지에 대한 스타일시트를 연결합니다. -->
 </head>
 <body> 
-<div class="login-container">
+<div class="login-container">  <!-- 로그인 컨테이너 -->
     <div class="logo">
-            <img src="../css/image/loginlogo.png" alt="ARES 로고">
+            <img src="../css/image/loginlogo.png" alt="ARES 로고">  <!-- ARES 로고 이미지 -->
             <div id="login_wrap" class="wrap">   
-        <form class="login-form" action="login.php" method="post">
-            <input type="text" name="id" placeholder="ID" required>
-            <input type="password" name="pw" placeholder="PW" required>
+        <form class="login-form" action="login.php" method="post">  <!-- 로그인 폼 -->
+            <input type="text" name="id" placeholder="ID" required>  <!-- ID 입력 필드 -->
+            <input type="password" name="pw" placeholder="PW" required>  <!-- 비밀번호 입력 필드 -->
             <label>
-                <input type="checkbox" name="remember"> 자동 로그인
+                <input type="checkbox" name="remember"> 자동 로그인  <!-- 자동 로그인 옵션 -->
             </label>
-            <input type="submit" value="로그인">
+            <input type="submit" value="로그인">  <!-- 로그인 버튼 -->
         </form> 
 </div>
-        <div class="link-container">
-        <a href="findid.php">ID 찾기</a> |
-        <a href="#">PW 찾기</a> |
-        <a href="signup.php">회원가입</a>
+        <div class="link-container">  <!-- 링크 컨테이너 -->
+        <a href="findid.php">ID 찾기</a> |  <!-- ID 찾기 링크 -->
+        <a href="#">PW 찾기</a> |  <!-- PW 찾기 링크 -->
+        <a href="signup.php">회원가입</a>  <!-- 회원가입 링크 -->
 </div>
 </body>
 </html>
