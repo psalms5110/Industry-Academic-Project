@@ -9,7 +9,7 @@ include 'DB/logindb.php';  // DB 연결을 위한 db.php 파일을 포함.
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <link href="../css/login.css" rel="stylesheet">  <!-- 로그인 페이지에 대한 스타일시트를 연결합니다. -->
+    <link href="CSS/login.css" rel="stylesheet">  <!-- 로그인 페이지에 대한 스타일시트를 연결합니다. -->
 </head>
 <body> 
 <div class="login-container">  <!-- 로그인 컨테이너 -->

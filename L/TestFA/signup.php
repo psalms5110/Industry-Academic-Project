@@ -8,7 +8,7 @@ include 'DB/signupdb.php'; // DB/db.php 파일을 포함.
 <head>
     <meta charset="UTF-8">
     <title>회원 가입</title>
-    <link href="../css/signup.css" rel="stylesheet">
+    <link href="CSS/signup.css" rel="stylesheet">
 </head>
 <body>
 
