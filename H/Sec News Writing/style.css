@@ -1,0 +1,75 @@
+/* 이미지 스타일 */
+.home-image {
+  float: left;
+  /* 왼쪽으로 치우치도록 설정 */
+  margin-right: 20px;
+  /* 이미지 오른쪽 여백 추가 */
+  width: 50px;
+  height: 50px;
+  /* 이미지의 높이를 자동으로 조정합니다. */
+}
+
+.cate {
+  float: left;
+  /* 왼쪽으로 치우치도록 설정 */
+  margin-right: 20px;
+  margin-left: 10px;
+  /* 이미지 오른쪽 여백 추가 */
+  width: 50px;
+  height: 50px;
+  /* 이미지의 높이를 자동으로 조정합니다. */
+}
+
+/* 프로필 이미지 오른쪽 */
+.profile-image {
+  margin-left: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+/* 검색창 스타일 */
+.search-container {
+  float: right;
+  padding: 14px 20px;
+  flex: 8;
+}
+
+.search-container input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.search-container button {
+  padding: 6px 10px;
+  margin-top: 8px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background: #ccc;
+}
+
+/* 
+.box-container{
+  width: 70%;
+  margin: auto;
+  display: grid;
+  grid-template-rows: repeat(26,40px);
+  gap: 10px;
+}
+.box-container2{
+  width: 70%;
+  margin: auto;
+  display: grid;
+  grid-template-rows: repeat(10,40px);
+  gap: 10px;
+} */
+form {
+  width: 70%;
+  margin: auto;
+}
