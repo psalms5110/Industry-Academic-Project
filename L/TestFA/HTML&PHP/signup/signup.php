@@ -1,5 +1,5 @@
 <?php
-include 'DB/signupdb.php'; // DB/db.php 파일을 포함.
+include '../../DB/signupdb.php'; // DB/db.php 파일을 포함.
 ?>
 
 
