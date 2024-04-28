@@ -9,7 +9,7 @@ include 'DB/logindb.php';  // DB 연결을 위한 db.php 파일을 포함.
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <link href="CSS/login.css" rel="stylesheet">  <!-- 로그인 페이지에 대한 스타일시트를 연결합니다. -->
+    <link href="../../styles/login.css" rel="stylesheet">  <!-- 로그인 페이지에 대한 스타일시트를 연결합니다. -->
 </head>
 <body> 
 <div class="login-container">  <!-- 로그인 컨테이너 -->
@@ -26,9 +26,9 @@ include 'DB/logindb.php';  // DB 연결을 위한 db.php 파일을 포함.
         </form> 
 </div>
         <div class="link-container">  <!-- 링크 컨테이너 -->
-        <a href="findid.php">ID 찾기</a> |  <!-- ID 찾기 링크 -->
-        <a href="#">PW 찾기</a> |  <!-- PW 찾기 링크 -->
-        <a href="signup.php">회원가입</a>  <!-- 회원가입 링크 -->
+        <a href="../find/findid.php">ID 찾기</a> |  <!-- ID 찾기 링크 -->
+        <a href="../find/findpw.php">PW 찾기</a> |  <!-- PW 찾기 링크 -->
+        <a href="../singnup/signup.php">회원가입</a>  <!-- 회원가입 링크 -->
 </div>
 </body>
 </html>

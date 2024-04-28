@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Ares</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="../../styles/Freeboard.css" rel="stylesheet" />
   </head>
 
 <body>

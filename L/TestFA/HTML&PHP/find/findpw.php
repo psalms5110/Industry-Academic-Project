@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Find PW</title>
-    <link href="CSS/findpw.css" rel="stylesheet">
+    <link href="../../styles/findpw.css" rel="stylesheet">
 </head>
 <body> 
     <div class="container">
