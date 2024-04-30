@@ -9,7 +9,7 @@
 <body>
 
 <div class="signup-container">
-    <form id="signupForm" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+    <form id="signupForm" action="signup.php" method="post">
         <div class="form-group">
             <input type="text" id="name" name="name" placeholder="이름" required>
             <input type="text" id="username" name="username" placeholder="ID" required>
@@ -21,14 +21,7 @@
             <button type="button" id="sendVerificationEmail">본인 확인 메일 발송</button>
         </div>
 
-        <div class="verification-container">
-            <input type="text" id="verification_code" name="verification_code" placeholder="인증번호" required>
-            <button type="button" id="verifyEmail">인증</button>
-        </div>
-
-        <!-- 나머지 폼 요소는 이전 HTML과 동일 -->
-
-        <button type="submit" name="submit">회원 가입</button>
+        <button type="submit" id="submitForm">가입하기</button>
     </form>
 </div>
 

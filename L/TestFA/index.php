@@ -20,8 +20,8 @@
         </div>
 
         <div class="button-container"> <!-- 로그인 및 회원가입 버튼을 담는 컨테이너 -->
-            <button onclick="location.href='/HTML&PHP/login/login.php'" class="button">로그인</button> <!-- 로그인 페이지 주소 및 이동 버튼 -->
-            <button onclick="location.href='signup.php'" class="button">회원가입</button> <!-- 회원가입 페이지 주소 및 이동 버튼 -->
+            <button onclick="location.href='/HTMLandPHP/login/login.php'" class="button">로그인</button> <!-- 로그인 페이지 주소 및 이동 버튼 -->
+            <button onclick="location.href='/HTMLandPHP/signup/signup.php'" class="button">회원가입</button> <!-- 회원가입 페이지 주소 및 이동 버튼 -->
         </div>
     </div>
 </body>
