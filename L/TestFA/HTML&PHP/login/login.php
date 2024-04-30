@@ -1,6 +1,6 @@
 <?php
 session_start();  // 세션 시작
-include 'DB/logindb.php';  // DB 연결을 위한 db.php 파일을 포함.
+include '../../path/to/logindb.php';  // DB 연결을 위한 db.php 파일을 포함.
 
 ?>
 
@@ -28,7 +28,7 @@ include 'DB/logindb.php';  // DB 연결을 위한 db.php 파일을 포함.
         <div class="link-container">  <!-- 링크 컨테이너 -->
         <a href="../find/findid.php">ID 찾기</a> |  <!-- ID 찾기 링크 -->
         <a href="../find/findpw.php">PW 찾기</a> |  <!-- PW 찾기 링크 -->
-        <a href="../singnup/signup.php">회원가입</a>  <!-- 회원가입 링크 -->
+        <a href="../signup/signup.php">회원가입</a>  <!-- 회원가입 링크 -->
 </div>
 </body>
 </html>
