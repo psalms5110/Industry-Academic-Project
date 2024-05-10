@@ -2,7 +2,11 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-include '../../path/to/db_config.php';  // 경로에 주의하세요
+require '../../vendor/autoload.php';  // PHPMailer를 사용하기 위해 autoload.php 경로 수정 필요
+include '../../path/to/db_config.php';  // 실제 db_config.php 파일 경로
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
 function generateVerificationCode() {
     return bin2hex(random_bytes(16));  // 강력한 랜덤 인증 코드 생성
@@ -25,15 +29,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($_POST['email'])) {
 
     if ($stmt->affected_rows > 0) {
         // 메일 보내기
-        $subject = "이메일 인증";
-        $message = "인증 코드: " . $verificationCode;
-        $headers = 'From: noreply@gmail.com' . "\r\n" .
-            'X-Mailer: PHP/' . phpversion();
+        $mail = new PHPMailer(true);
+        try {
+            // SMTP 서버 설정
+            $mail->isSMTP();
+            $mail->Host       = 'smtp.gmail.com'; // SMTP 서버 주소
+            $mail->SMTPAuth   = true;
+            $mail->Username   = 'psalms51100@gmail.com'; // SMTP 서버의 사용자 이름
+            $mail->Password   = '686f6e657374'; // SMTP 서버의 비밀번호
+            $mail->SMTPSecure = 'tls';
+            $mail->Port       = 587;
 
-        if (mail($email, $subject, $message, $headers)) {
+            // 수신자 설정
+            $mail->setFrom('noreply@project001.com', 'Mailer');
+            $mail->addAddress($email); // 수신자 이메일
+
+            // 메일 내용 설정
+            $mail->isHTML(true); // HTML 형식의 이메일
+            $mail->Subject = '이메일 인증';
+            $mail->Body    = "인증 코드: " . $verificationCode;
+
+            $mail->send();
             echo 'Email sent';
-        } else {
-            echo 'Failed to send email';
+        } catch (Exception $e) {
+            echo 'Failed to send email. Mailer Error: ' . $mail->ErrorInfo;
         }
     } else {
         echo 'Email not registered';
