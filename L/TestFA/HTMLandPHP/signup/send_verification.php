@@ -1,4 +1,7 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 include '../../path/to/db_config.php';  // 경로에 주의하세요
 
 function generateVerificationCode() {
@@ -24,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($_POST['email'])) {
         // 메일 보내기
         $subject = "이메일 인증";
         $message = "인증 코드: " . $verificationCode;
-        $headers = 'From: noreply@example.com' . "\r\n" .
+        $headers = 'From: noreply@gmail.com' . "\r\n" .
             'X-Mailer: PHP/' . phpversion();
 
         if (mail($email, $subject, $message, $headers)) {

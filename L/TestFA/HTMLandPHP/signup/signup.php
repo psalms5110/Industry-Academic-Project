@@ -9,11 +9,12 @@
 <body>
 
 <div class="signup-container">
-    <form id="signupForm" action="signup.php" method="post">
+    <form id="signupForm" action="signupdb.php" method="post">
         <div class="form-group">
-            <input type="text" id="name" name="name" placeholder="이름" required>
-            <input type="text" id="username" name="username" placeholder="ID" required>
+            <input type="name" id="name" name="name" placeholder="이름" required>
+            <input type="ID" id="username" name="username" placeholder="ID" required>
             <input type="password" id="password" name="password" placeholder="PW" required>
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm PW" required> <!-- 패스워드 재확인 입력 필드 추가 -->
         </div>
 
         <div class="form-group">
@@ -21,9 +22,15 @@
             <button type="button" id="sendVerificationEmail">본인 확인 메일 발송</button>
         </div>
 
+        <div class="form-group"> <!-- 이메일 인증 코드 입력 필드 추가 -->
+            <input type="email code" id="verification_code" name="verification_code" placeholder="인증 코드 입력" required>
+            <button type="button" id="verifyEmail">인증 코드 확인</button>
+        </div>
+
         <button type="submit" id="submitForm">가입하기</button>
     </form>
 </div>
+
 
 <script>
 $(document).ready(function() {

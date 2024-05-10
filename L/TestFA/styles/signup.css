@@ -22,7 +22,7 @@ body {
 
 .form-group input[type="text"],
 .form-group input[type="password"],
-.form-group-email input[type="email"],
+.form-group input[type="email"],
 .form-group select {
     width: 100%;
     padding: 10px;
@@ -31,74 +31,51 @@ body {
     box-sizing: border-box;
 }
 
-.form-group-email {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-.form-group-email button {
+.form-group button {
     background-color: #B6D7EB;
     border: 1px solid #96B6CA;
     cursor: pointer;
     color: #8C8C8C;
     border-radius: 3px;
-    justify-content: center;
-    margin-bottom: 20px;
+    padding: 8px 16px;
+    width: 100%;
+    margin-top: 10px;
 }
 
-.form-group-email button:hover {
+.form-group button:hover {
     background-color: #2980b9;
-}
-.form-group input[type="radio"] {
-    margin-right: 5px;
+    color: #ffffff;
 }
 
 .verification-container {
     position: relative;
     display: flex;
     margin-bottom: 15px;
+    justify-content: space-between;
+    align-items: center;
 }
+
 .verification-container input[type="text"] {
-    height: 30px;
     flex-grow: 1;
-    margin: 0;
+    padding: 10px;
     border: 1px solid #d1d5da;
     border-radius: 3px;
+    box-sizing: border-box;
 }
 
 .verification-container button {
-    position: absolute;
-    top: 10%;
-    right: 2%;
-    border-radius: 5px;
+    border-radius: 3px;
     border: 1px solid #96B6CA;
     color: #8C8C8C;
-    padding: 0 15px;
-    margin: 4px;
+    padding: 8px 16px;
+    margin-left: 10px;
     background-color: #B6D7EB;
-    height: 60%;
     cursor: pointer;
 }
 
-.verification-container button:hover,
-button[type="submit"]:hover {
+.verification-container button:hover {
     background-color: #2980b9;
-}
-
-.form-group label {
-    margin-right: 30px;
-    margin-left: 5px;
-}
-
-.form-group-birthday label{
-    margin-right: 30px;
-}
-
-#birthYear,
-#birthMonth,
-#birthDay {
-    margin: 10px
+    color: #ffffff;
 }
 
 button[type="submit"] {
@@ -113,5 +90,6 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color:#2980b9;;
+    background-color:#2980b9;
+    color: #ffffff;
 }
