@@ -59,7 +59,7 @@ body {
     padding: 10px;
     margin: 10px;
     border: 1px solid #96B6CA;
-    border-radius: 3px;
+    border-radius: 1px;
     background-color: #B6D7EB;
     color: #8C8C8C;
     cursor: pointer;
@@ -67,4 +67,23 @@ body {
 
 .login-form input[type="submit"]:hover {
     background-color: #1A6A9E;
+}
+
+a { 
+    text-decoration: none; color: black;
+}
+
+a:visited {
+     text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none; 
+}
+a:focus {
+    text-decoration: none; 
+}
+
+a:hover, a:active {
+     text-decoration: none; 
 }

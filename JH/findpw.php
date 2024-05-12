@@ -8,7 +8,7 @@
 <body> 
     <div class="container">
         <h1>PW 찾기</h1>
-        <form action="resetpw.php" method="post">
+        <form action="findpw2.php" method="post">
             <input type="text" id="username" name="username" placeholder="ID" required>
 
             <div class="form-group">
