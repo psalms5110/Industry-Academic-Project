@@ -3,12 +3,10 @@ $host = 'localhost';
 $dbname = 'post';
 $username = 'root';
 $password = 'ares123';
-$perPage = 10; // 한 페이지당 10개의 게시글을 표시
+$perPage = 10;
 
-// 데이터베이스 연결
 $conn = new mysqli($host, $username, $password, $dbname);
 
-// 연결 확인
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }

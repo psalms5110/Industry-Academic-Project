@@ -24,7 +24,7 @@ body {
     border-radius: 15px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
     text-align: center;
-    position: relative; /* 이 설정을 통해 버튼을 컨테이너 내부에서 위치 조정 가능 */
+    position: relative;
 }
 
 .avatar {
@@ -54,7 +54,7 @@ body {
 }
 
 .input-group:first-child {
-    margin-right: 50px;  /* 오른쪽 마진 추가 */
+    margin-right: 50px;
 }
 
 input[type="text"],
@@ -71,8 +71,8 @@ textarea {
     border: 1px solid #D7D8D8;
     border-radius: 5px;
     background-color: #F6F6F6;
-    height: 100px; /* 높이 설정 */
-    resize: none; /* 사용자가 세로 방향으로만 크기 조절 가능하게 설정 */
+    height: 100px;
+    resize: none;
 }
 
 label {
@@ -83,7 +83,7 @@ label {
 
 .button-group {
     text-align: center;
-    margin-top: 20px; /* 조절해 자기소개 입력칸 아래에 위치 */
+    margin-top: 20px;
 }
 
 button {
@@ -117,8 +117,8 @@ button {
     color: #8C8C8C;
     border: 1px solid #CDCDCD;
     border-radius: 5px;
-    text-decoration: none; /* 링크의 밑줄 제거 */
-    display: inline-block; /* 필요한 스타일링 속성 추가 */
+    text-decoration: none;
+    display: inline-block;
     text-align: center;
     cursor: pointer;
 }
