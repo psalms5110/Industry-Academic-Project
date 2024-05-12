@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('image/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0; 
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-container {
+    width: 456px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background: #eee;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.menu {
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu-item {
+    text-align: left;
+    padding: 10px 0;
+}
+
+.menu-label {
+    font-weight: bold;
+    padding-bottom: 5px;
+    display: block;
+    border-bottom: 2px solid #000;
+    margin-top:20px;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    border-bottom: 1px solid #000;
+    margin-top: 10px;
+}
+
+.menu-link:last-child {
+    border-bottom: 2px solid #000;
+}
+
+.menu-link:hover {
+    background-color: #f8f8f8;
+}
+
+a { 
+    text-decoration: none; color: black;
+}
+
+a:visited {
+     text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none; 
+}
+a:focus {
+    text-decoration: none; 
+}
+
+a:hover, a:active {
+     text-decoration: none; 
+}
+
+.hi a {
+    margin-right: 20px;
+}
+
+.hi a:last-child {
+    margin-right: 0;
+}
