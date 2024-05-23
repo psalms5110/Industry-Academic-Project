@@ -1,0 +1,152 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ADADAD;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* 상단바 추가를 위해 수정 */
+}
+
+.navbar {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar .logo img {
+    height: 40px;
+    width: 600px;
+    margin-right:100px;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.navbar-links img {
+    height: 20px;
+    vertical-align: middle;
+}
+
+.wrap {
+    width: 606px;
+    height: 649px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.link-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.link-container a {
+    margin: 0 40px; /* 링크 사이의 간격을 넓히기 위해 추가 */
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 50px); /* 상단바 높이만큼 빼기 */
+    text-align: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form label {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    width: 300px;
+    justify-content: flex-start;
+}
+
+.logo img {
+    width: auto;
+    max-width: 20%;
+    height: auto;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 403px;
+    height: 45px;
+    border: 1px solid #CCCCCC;
+    background-color: #F2F2F2;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    color: Black;
+}
+
+.login-form input[type="checkbox"] {
+    margin-right: 10px;
+    margin-left: -50px;
+}
+
+.login-form input[type="submit"] {
+    width: 403px;
+    height: 62px;
+    padding: 10px;
+    margin: 10px;
+    border:none;
+    border-radius: 5px;
+    background-color: #959595;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.login-form input[type="submit"]:hover {
+    background-color: #737373;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus {
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    text-decoration: none;
+}
