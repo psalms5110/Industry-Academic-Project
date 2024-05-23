@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <a href="#">커뮤니티</a>
                 <a href="#">퀴즈</a>
                 <a href="#"><img src="path_to_search_icon" alt="Search"></a>
-                <a href="#">로그인</a>
+                <a href="login.php">로그인</a>
             </nav>
         </div>
     </div>
