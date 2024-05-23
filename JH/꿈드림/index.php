@@ -6,7 +6,6 @@
     <link href="css/index.css" rel="stylesheet">
 </head>
 <body>
-    <!-- 상단바 시작 -->
     <div class="navbar">
         <div class="navbar-container">
             <div class="logo">
@@ -22,9 +21,7 @@
             </nav>
         </div>
     </div>
-    <!-- 상단바 끝 -->
     
-    <!-- 배너 시작 -->
     <div class="banner">
         <div class="banner-container">
             <a href="#" class="banner-arrow left">&#9664;</a>
@@ -38,6 +35,5 @@
             <span class="indicator">&#9679;</span>
         </div>
     </div>
-    <!-- 배너 끝 -->
 </body>
 </html>
