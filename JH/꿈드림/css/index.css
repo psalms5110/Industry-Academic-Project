@@ -25,9 +25,12 @@ body {
     height: 40px;
     width: 140px;
     margin-right:100px;
+    margin-left: -200px;
 }
 
-
+.navbar-links {
+    margin-right: -200px;
+}
 .navbar-links a {
     color: white;
     text-decoration: none;

@@ -7,7 +7,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; /* 상단바 추가를 위해 수정 */
 }
 
 .navbar {
@@ -28,8 +28,13 @@ body {
 
 .navbar .logo img {
     height: 40px;
-    width: 600px;
+    width: 800px;
     margin-right:100px;
+    margin-left: -200px;
+}
+
+.navbar-links{
+    margin-right: -200px;
 }
 
 .navbar-links a {
@@ -57,7 +62,7 @@ body {
 }
 
 h2 {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .link-container {
@@ -66,7 +71,7 @@ h2 {
 }
 
 .link-container a {
-    margin: 0 40px;
+    margin: 0 40px; /* 링크 사이의 간격을 넓히기 위해 추가 */
 }
 
 .login-container {
@@ -74,7 +79,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 50px); /* 상단바 높이만큼 빼기 */
     text-align: center;
 }
 

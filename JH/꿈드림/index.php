@@ -21,7 +21,6 @@
             </nav>
         </div>
     </div>
-    
     <div class="banner">
         <div class="banner-container">
             <a href="#" class="banner-arrow left">&#9664;</a>
