@@ -1,39 +1,28 @@
 <?php
 session_start();
 
-$host = 'localhost';
-$dbname = 'member';
-$username = 'root';
-$password = 'ares123';
+// Include database connection
+include 'db.php';
 
-$conn = new mysqli($host, $username, $password, $dbname);
+// Check if form is submitted
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $username = $_POST['id'];
+    $password = $_POST['pw'];
 
-if ($conn->connect_error) {
-    die("연결 실패: " . $conn->connect_error);
-}
-
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $id = mysqli_real_escape_string($conn, $_POST['id']);
-    $pw = mysqli_real_escape_string($conn, $_POST['pw']);
-
-    $sql = "SELECT id, username, password FROM users WHERE username = '$id'";
+    // Check if user exists in the database
+    $sql = "SELECT * FROM users WHERE username='$username' AND password='$password'";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
-        $row = $result->fetch_assoc();
-        if (password_verify($pw, $row['password'])) {
-            $_SESSION['loggedin'] = true;
-            $_SESSION['username'] = $row['username'];
-            $_SESSION['id'] = $row['id'];
-
-            header("Location: board.php");
-            exit;
-        } else {
-            echo "<script>alert('비밀번호가 일치하지 않습니다.'); window.location.href='login.php';</script>";
-        }
+        // User found, set session variables and redirect to index.php
+        $_SESSION['username'] = $username;
+        header("Location: Index.php");
+        exit();
     } else {
-        echo "<script>alert('아이디가 존재하지 않습니다.'); window.location.href='login.php';</script>";
+        // User not found, display error message
+        $error_message = "아이디 또는 비밀번호가 잘못되었습니다.";
     }
+
     $conn->close();
 }
 ?>
@@ -66,6 +55,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <div class="login-container">
         <div id="login_wrap" class="wrap">
             <h2>로그인</h2>
+            <?php if (isset($error_message)): ?>
+                <p style="color: red;"><?php echo $error_message; ?></p>
+            <?php endif; ?>
             <form class="login-form" action="login.php" method="post">
                 <input type="text" name="id" placeholder="아이디" required>
                 <input type="password" name="pw" placeholder="비밀번호" required>
@@ -76,7 +68,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <div class="link-container">
                     <a href="Find_ID_1.php">ID 찾기</a> 
                     <a href="findpw.php">PW 찾기</a> 
-                    <a href="signup.php">회원가입</a>
+                    <a href="Register1.php">회원가입</a>
                 </div>
             </form>
         </div>
