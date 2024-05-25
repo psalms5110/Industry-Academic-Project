@@ -1,13 +1,12 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #D3D3D3;
+    background-color: #d3d3d3;
     margin: 0;
-    padding: 0;
     height: 100vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .navbar {
@@ -37,10 +36,6 @@ body {
     margin-left: -200px;
 }
 
-.navbar-links {
-    margin-right: -200px;
-}
-
 .navbar-links a {
     color: white;
     text-decoration: none;
@@ -52,43 +47,50 @@ body {
     vertical-align: middle;
 }
 
+.navbar-links {
+    margin-right: -200px;
+}
+
 .container {
-    width: 748px;
-    height: 649px;
-    background-color: #FFFFFF;
+    background-color: white;
+    padding: 20px 40px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin-top: 60px;
+    width: 748px;
+    height: 552px;
 }
 
 h1 {
-    margin-top: 100px;
+    color: #727272;
+    font-size: 35px;
     margin-bottom: 100px;
+    margin-top: 100px;
 }
 
-.info-box {
+.result-box {
     margin:auto;
-    margin-top: -50px;
-    width: 517px;
-    height: 223px;
     background-color: #f3f3f3;
+    padding: 20px;
     border-radius: 5px;
-    border: 1px solid #cdcdcd;
     margin-bottom: 20px;
+    width: 517px;
+    height: 130px;
     text-align: left; /* 내부 텍스트 좌측 정렬 */
     display: inline-block; /* 중앙 정렬을 위한 설정 */
 }
 
-.info-box p {
-    margin-left: 80px;
-    margin-top: 40px;
+.result-box p {
+    margin: 10px 0;
+    margin-left: 70px;
+    margin-top: 25px;
+    color:#696969;
 }
 
 .button-container {
     display: flex;
     justify-content: center;
-    gap: 80px;
+    gap: 60px; /* 버튼 간의 간격 설정 */
 }
 
 button {

@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Find ID</title>
-    <link href="css/Find_ID_1.css" rel="stylesheet">
+    <title>Find PW</title>
+    <link href="css/Find_PW_1.css" rel="stylesheet">
 </head>
-<body>
+<body> 
     <div class="navbar">
         <div class="navbar-container">
             <div class="logo">
@@ -22,24 +22,27 @@
         </div>
     </div>
     <div class="container">
-        <h1>아이디 찾기</h1>
-        <form action="find_id_2.php" method="POST">
+        <h1>비밀번호 찾기</h1>
+        <form action="Find_PW_2.php" method="post">
+            <div class="form-group">
+                <input type="text" id="username" name="username" placeholder="아이디" required>
+            </div>
             <div class="form-group">
                 <input type="email" id="email" name="email" placeholder="이메일" required>
             </div>
             
             <div class="button-container">
-                <button type="button">인증 메일 발송</button>
+                <button type="button" class="verification-button">인증 메일 발송</button>
             </div>
 
-            <div class="verification-container">
+            <div class="form-group">
                 <div class="verification-input-group">
                     <input type="text" id="verification_code" name="verification_code" placeholder="인증번호" required>
                 </div>
             </div>
-
+            
             <div class="button-container">
-                <button type="submit">다음</button>
+                <button type="submit" class="submit-button">완료</button>
             </div>
         </form>
     </div>

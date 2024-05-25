@@ -67,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <input type="submit" value="로그인">
                 <div class="link-container">
                     <a href="Find_ID_1.php">ID 찾기</a> 
-                    <a href="findpw.php">PW 찾기</a> 
+                    <a href="Find_PW_1.php">PW 찾기</a> 
                     <a href="Register1.php">회원가입</a>
                 </div>
             </form>

@@ -1,13 +1,12 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #D3D3D3;
+    background-color: #d3d3d3;
     margin: 0;
-    padding: 0;
     height: 100vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .navbar {
@@ -37,10 +36,6 @@ body {
     margin-left: -200px;
 }
 
-.navbar-links {
-    margin-right: -200px;
-}
-
 .navbar-links a {
     color: white;
     text-decoration: none;
@@ -50,6 +45,10 @@ body {
 .navbar-links img {
     height: 20px;
     vertical-align: middle;
+}
+
+.navbar-links {
+    margin-right: -200px;
 }
 
 .container {
@@ -62,47 +61,66 @@ body {
     margin-top: 60px;
 }
 
-h1 {
+.container h1 {
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+    font-size: 35;
 }
 
-.info-box {
-    margin:auto;
-    margin-top: -50px;
-    width: 517px;
-    height: 223px;
-    background-color: #f3f3f3;
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input {
+    width: 535px;
+    height: 62px;
     border-radius: 5px;
-    border: 1px solid #cdcdcd;
-    margin-bottom: 20px;
-    text-align: left; /* 내부 텍스트 좌측 정렬 */
-    display: inline-block; /* 중앙 정렬을 위한 설정 */
-}
-
-.info-box p {
-    margin-left: 80px;
-    margin-top: 40px;
+    background-color: #f9f9f9;
+    border: 1px solid #E2E2E2;
 }
 
 .button-container {
-    display: flex;
-    justify-content: center;
-    gap: 80px;
+    margin-bottom: 15px;
 }
 
-button {
+.verification-button {
+    margin-bottom: 20px;
+    width: 222px;
+    height: 53px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: #c0c0c0;
+    border-radius: 10px;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.verification-button:hover {
+    background-color: #959595;
+}
+
+.verification-container {
+    margin-bottom: 15px;
+}
+
+.verification-input-group {
+    margin-bottom: 15px;
+}
+
+.submit-button {
     background-color: #959595;
     border-radius: 10px;
     border: none;
     color: white;
     cursor: pointer;
-    width: 217px;
+    width: 139px;
     height: 53px;
+    margin-right: -450px;
     font-size: 25px;
     margin-top: 30px;
 }
 
-button:hover {
-    background-color: #bbb;
+.submit-button:hover {
+    background-color: #737373;
 }

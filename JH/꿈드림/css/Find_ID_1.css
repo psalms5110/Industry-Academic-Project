@@ -64,7 +64,7 @@ body {
     text-align: center;
     padding: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 80px;
+    margin-top: 80px; /* 상단바 높이만큼 아래로 밀기 */
 }
 
 h1 {
