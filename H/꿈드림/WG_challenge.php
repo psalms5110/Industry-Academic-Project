@@ -196,10 +196,6 @@ function checkFlag() {
             <a href="#">&raquo;</a>
         </div>
     </div>
-
-    <div class="footer">
-        <p>&copy; 2024 ARES. All rights reserved.</p>
-    </div>
 </div>
 </body>
 </html>
