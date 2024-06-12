@@ -29,49 +29,54 @@ $offset = ($currentPage - 1) * $perPage;
 $sql = "SELECT id, title, inquiry_date, status FROM inquiries ORDER BY inquiry_date DESC LIMIT $perPage OFFSET $offset";
 $result = $conn->query($sql);
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['delete_posts']) && isset($_POST['post_ids'])) {
-    $post_ids = $_POST['post_ids'];
-    foreach ($post_ids as $id) {
-        $deleteQuery = "DELETE FROM inquiries WHERE id = ?";
-        $stmt = $conn->prepare($deleteQuery);
-        $stmt->bind_param("i", $id);
-        $stmt->execute();
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['delete_posts']) && isset($_POST['post_ids'])) {
+        $post_ids = $_POST['post_ids'];
+        foreach ($post_ids as $id) {
+            $deleteQuery = "DELETE FROM inquiries WHERE id = ?";
+            $stmt = $conn->prepare($deleteQuery);
+            $stmt->bind_param("i", $id);
+            $stmt->execute();
+        }
+        header("Location: " . $_SERVER['PHP_SELF']);
+        exit();
     }
-    header("Location: " . $_SERVER['PHP_SELF']);
-    exit();
-}
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_status']) && isset($_POST['post_ids'])) {
-    $post_ids = $_POST['post_ids'];
-    foreach ($post_ids as $id) {
-        $updateQuery = "UPDATE inquiries SET status = '답변 완료' WHERE id = ?";
-        $stmt = $conn->prepare($updateQuery);
-        $stmt->bind_param("i", $id);
-        $stmt->execute();
+    if (isset($_POST['update_status']) && isset($_POST['post_ids'])) {
+        $post_ids = $_POST['post_ids'];
+        foreach ($post_ids as $id) {
+            $updateQuery = "UPDATE inquiries SET status = '답변 완료' WHERE id = ?";
+            $stmt = $conn->prepare($updateQuery);
+            $stmt->bind_param("i", $id);
+            $stmt->execute();
+        }
+        header("Location: " . $_SERVER['PHP_SELF']);
+        exit();
     }
-    header("Location: " . $_SERVER['PHP_SELF']);
-    exit();
-}
 
+    if (isset($_POST['create_post'])) {
+        header("Location: Contact_us.php");
+        exit();
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>문의 게시판 관리</title>
-    <link href="css/post_management.css" rel="stylesheet">
-</head>
+    <title>문의 게시판</title>
+    <link href="css/inquiry_bulletin_board.css" rel="stylesheet">
+    </head>
 <body>
-<h2 class="board-title">[문의 게시판 관리]</h2>
-<form method="POST">
+<h2 class="board-title">[문의 게시판]</h2>
+<form method="POST" action="">
     <div class="delete-button-container">
-        <input type="submit" name="delete_posts" value="삭제">
-        <input type="submit" name="update_status" value="답변 완료">
+        <input type="submit" name="create_post" value="글쓰기">
     </div>
     <table class="board-table">
         <thead>
             <tr>
-                <th><input type="checkbox" id="selectAll"></th>
+                <th>접수 번호</th>
                 <th>제목</th>
                 <th>접수일</th>
                 <th>문의 상태</th>
@@ -82,8 +87,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_status']) && i
             $filledRows = 0;
             if ($result->num_rows > 0): ?>
                 <?php while($row = $result->fetch_assoc()): ?>
-                    <tr>
-                        <td><input type="checkbox" name="post_ids[]" value="<?php echo $row['id']; ?>"></td>
+                    <tr onclick="location.href='Response.php?id=<?php echo $row['id']; ?>'">
+                        <td><?php echo htmlspecialchars($row['id']); ?></td>
                         <td><?php echo htmlspecialchars($row['title']); ?></td>
                         <td><?php echo htmlspecialchars($row['inquiry_date']); ?></td>
                         <td><?php echo htmlspecialchars($row['status']); ?></td>
@@ -117,16 +122,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_status']) && i
     ?>
 </div>
 </form>
-
-<script>
-    // 전체 선택/해제 기능을 하는 JavaScript 코드
-    document.getElementById('selectAll').addEventListener('click', function(e) {
-        var checkboxes = document.querySelectorAll('input[name="post_ids[]"]');
-        for (var checkbox of checkboxes) {
-            checkbox.checked = this.checked;
-        }
-    });
-</script>
 </body>
 </html>
 <?php $conn->close(); ?>
