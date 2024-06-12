@@ -1,82 +1,201 @@
-/* 검색창 스타일 */
- .search-container {
-    float: right;
-    padding: 14px 20px;
-    margin-top: 0px; /* 이미지와의 간격 조정 */
-}
-/* 게시판 리스트 목록 */
-.sub_news,
-.sub_news th,
-.sub_news td {
-  border: 0
+body {
+  font-family: Arial, sans-serif;
 }
 
-.sub_news a {
-  color: #383838;
-  text-decoration: none
+header {
+  padding: 20px;
 }
 
-.sub_news {
-  width: 100%;
-  border-bottom: 1px solid #999;
-  color: #666;
-  font-size: 12px;
-  table-layout: fixed
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.sub_news caption {
-  display: none
+.logo-container {
+  display: flex;
+  align-items: center;
 }
 
-.sub_news th {
-  padding: 5px 0 6px;
-  border-top: solid 1px #999;
-  border-bottom: solid 1px #b2b2b2;
-  background-color: #f1f1f4;
-  color: #333;
-  font-weight: bold;
-  line-height: 20px;
-  vertical-align: top
+.cate,
+.home-image {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
 }
 
-.sub_news td {
-  padding: 8px 0 9px;
-  border-bottom: solid 1px #d2d2d2;
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-container input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.search-container button {
+  padding: 8px 16px;
+  background-color: #7D7D7D;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+/* 게시판 리스트 스타일 */
+#sort-select {
+  color: #656565;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.search-container1 {
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-container1 .search-box {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 18px;
+  /* 검색창을 2px 밑으로 내림 */
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-box input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-box input[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+  background-color: #DBDBDB;
+  color: #656565;
+  cursor: pointer;
+}
+
+.search-box input[type="submit"]:hover {
+  background-color: #D1D1D1;
+}
+
+.write-button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.total-posts {
+  font-size: 16px;
+  color: #656565;
+}
+
+.write-button {
+  background-color: #D1D1D1;
+  color: #656565;
+  border: none;
+  padding: 10px 20px;
   text-align: center;
-  line-height: 18px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-.sub_news .date,
-.sub_news .hit {
-  padding: 0;
-  font-family: Tahoma;
-  font-size: 11px;
-  line-height: normal
+.board-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
 }
 
-.sub_news .title {
+.board-table th,
+.board-table td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.board-table th {
+  background-color: #f1f1f4;
+  font-weight: bold;
+}
+
+.number {
+  width: 50px;
+  text-align: center;
+}
+
+.board-table .title {
   text-align: left;
   padding-left: 15px;
-  font-size: 13px;
 }
 
-.sub_news .title .pic,
-.sub_news .title .new {
-  margin: 0 0 2px;
-  vertical-align: middle
+.board-table .title a {
+  color: #656565;
+  text-decoration: none;
 }
 
-.sub_news .title a.comment {
-  padding: 0;
-  background: none;
+.board-table .attachment-icon,
+.board-table .new-icon {
+  vertical-align: middle;
+  margin: 0 2px;
+}
+
+.board-table .comment-link {
   color: #f00;
-  font-size: 12px;
-  font-weight: bold
+  font-weight: bold;
+  text-decoration: none;
 }
 
-.sub_news tr.reply .title a {
-  padding-left: 16px;
-  background: url(첨부파일/ic_reply.png) 0 1px no-repeat
+.board-table .reply .title {
+  padding-left: 46px;
+  background: url(ic_reply.png) 30px center no-repeat;
 }
 
-/* //게시판 리스트 목록 */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination a {
+  padding: 8px 16px;
+  text-decoration: none;
+  margin: 0 4px;
+  color: #000000;
+}
+
+.pagination a.active {
+  background-color: #D7E9F3;
+  color: black;
+}
