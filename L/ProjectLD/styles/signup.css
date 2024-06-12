@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('image/background.png') center / cover no-repeat;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-container {
+    background-color: #EDF7FD;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #CFE1EB;
+    width: 350px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group-email input[type="email"],
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5da;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group-email {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.form-group-email button {
+    margin-top: 10px;
+    background-color: #B6D7EB;
+    border: 1px solid #96B6CA;
+    cursor: pointer;
+    color: #8C8C8C;
+    border-radius: 3px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.form-group-email button:hover {
+    background-color: #2980b9;
+}
+.form-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+.verification-container {
+    position: relative;
+    display: flex;
+    margin-bottom: 15px;
+}
+.verification-container input[type="text"] {
+    height: 30px;
+    flex-grow: 1;
+    margin: 0;
+    border: 1px solid #d1d5da;
+    border-radius: 3px;
+}
+
+.verification-container button {
+    position: absolute;
+    top: 10%;
+    right: 2%;
+    border-radius: 5px;
+    border: 1px solid #96B6CA;
+    color: #8C8C8C;
+    padding: 0 15px;
+    margin: 4px;
+    background-color: #B6D7EB;
+    height: 60%;
+    cursor: pointer;
+}
+
+.verification-container button:hover,
+button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+.form-group label {
+    margin-right: 60px;
+    margin-left: 5px;
+}
+
+.form-group-birthday label{
+    margin-right: 30px;
+}
+
+#birthYear,
+#birthMonth,
+#birthDay {
+    margin: 10px
+}
+
+button[type="submit"] {
+    width: 100%;
+    height: 40px;
+    background-color: #B6D7EB;
+    border: 1px solid #96B6CA;
+    color: #8C8C8C;
+    border-radius: 3px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color:#2980b9;;
+}

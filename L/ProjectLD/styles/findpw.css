@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('image/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0; 
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 456px;
+    height: 337px;
+    margin: auto;
+    background-color: #EDF7FD;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline : solid 2px #CFE1EB;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#username {
+    width: 300px;
+    height: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+}
+
+#email {
+    width: 300px;
+    height: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+}
+
+.button-container button[type="button"] {
+    height: 30px;
+    width: 50%;
+    background-color: #B6D7EB;
+    border: 1px solid #96B6CA;
+    border-radius: 3px;
+    color: #8C8C8C;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.button-container button[type="button"]:hover {
+    background-color: #1A6A9E;
+}
+
+#verification_code {
+    width: 300px;
+    height: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+}
+
+.verification-input-group {
+    position: relative;
+    display: flex;
+}
+
+.verification-input-group input[type="text"] {
+    flex-grow: 1;
+    border-radius: 4px 0 0 4px;
+    padding-right: 80px;
+}
+
+.verification-input-group button {
+    position: absolute;
+    top: 10%;
+    right: 2%;
+    border-radius: 5px;
+    border: 1px solid #96B6CA;
+    color: #8C8C8C;
+    padding: 0 15px;
+    margin: 1px;
+    background-color: #B6D7EB;
+    height: 50%;
+    cursor: pointer;
+}
+
+.verification-input-group button:hover {
+    background-color: #1A6A9E;
+}
+
+.submit-button {
+    margin-top: 10px;
+    height: 30px;
+    width: 100%;
+    background-color: #B6D7EB;
+    border: 1px solid #96B6CA;
+    border-radius: 3px;
+    color: #8C8C8C;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.submit-button:hover {
+    background-color: #1A6A9E;
+}

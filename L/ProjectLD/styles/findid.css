@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('image/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 456px;
+    height: 337px;
+    margin: auto;
+    background-color: #EDF7FD;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline : solid 2px #CFE1EB;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#email, #verification_code {
+    width: 300px;
+    height: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+}
+
+.button-container button{
+    background-color: #B6D7EB;
+    border-radius: 3px;
+    border: 1px solid #96B6CA;
+    margin-bottom: 20px;
+    color: #8C8C8C;
+    cursor: pointer;
+}
+
+.button-container button:hover{
+    background-color: #1A6A9E;
+}
+
+.verification-input-group {
+    position: relative;
+    display: flex;
+}
+
+.verification-input-group input[type="text"] {
+    width: 90%;
+    border: 1px solid #CCCCCC;
+    padding: 10px;
+    border-radius: 4px 0 0 4px;
+    padding-right: 10px;
+}
+
+.verification-input-group button {
+    position: absolute;
+    top: 10%;
+    right: 3%;
+    border-radius: 5px;
+    border: 1px solid #96B6CA;
+    color: #8C8C8C;
+    padding: 0 15px;
+    margin: 1px;
+    background-color: #B6D7EB;
+    height: 50%;
+    cursor: pointer;
+}
+#verification_button:hover {
+    background-color: #1A6A9E;
+}
+
+.container input[type="submit"] {
+    background-color: #B6D7EB;
+    color: #8C8C8C;
+    border-radius: 3px;
+    border: 1px solid #CCCCCC;
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    width: 80%;
+    cursor: pointer;
+}
+
+.container input[type="submit"]:hover {
+    background-color: #1A6A9E;
+}

@@ -1,0 +1,201 @@
+/* 네비게이션 바 스타일 */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #8eb6d6;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  position: -webkit-sticky;
+  /*safari*/
+  position: sticky;
+}
+
+li {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a,
+.dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #61a6d7;
+}
+
+.active {
+  background-color: #425379;
+}
+
+article {
+  display: felx;
+  margin: 50px;
+}
+
+/* 이미지 스타일 */
+.home-image {
+  float: left;
+  /* 왼쪽으로 치우치도록 설정 */
+  margin-right: 20px;
+  /* 이미지 오른쪽 여백 추가 */
+  width: 50px;
+  height: 50px;
+  /* 이미지의 높이를 자동으로 조정합니다. */
+}
+
+.cate {
+  float: left;
+  /* 왼쪽으로 치우치도록 설정 */
+  margin-right: 20px;
+  margin-left: 10px;
+  /* 이미지 오른쪽 여백 추가 */
+  width: 50px;
+  height: 50px;
+  /* 이미지의 높이를 자동으로 조정합니다. */
+}
+
+/* 프로필 이미지 오른쪽 */
+.profile-image {
+  margin-left: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+/* 검색창 스타일 */
+.search-container {
+  float: right;
+  padding: 14px 20px;
+  flex: 8;
+}
+
+.search-container input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.search-container button {
+  padding: 6px 10px;
+  margin-top: 8px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background: #ccc;
+}
+
+.left-container {
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+}
+
+.right-container {
+  width: 50%;
+  float: right;
+  box-sizing: border-box;
+}
+
+.container-free {
+  display: flex;
+}
+
+.container-post {
+  display: flex;
+}
+
+.container-news {
+  display: flex;
+}
+
+.sec {
+  position: relative;
+
+  width: 100%;
+  justify-content: center;
+
+}
+
+.box1 {
+  display: flex;
+  /* 요소들을 가로로 배열하기 위해 Flexbox 사용 */
+  align-items: center;
+  /* 요소들을 세로로 중앙 정렬 */
+  flex: 1;
+}
+
+.box1 img {
+  margin-right: 10px;
+  /* 이미지 오른쪽 여백 */
+  max-width: 100px;
+  /* 이미지 최대 너비 */
+  height: auto;
+  /* 이미지 높이 자동 조정 */
+}
+
+.box2 {
+  display: flex;
+  /* 요소들을 가로로 배열하기 위해 Flexbox 사용 */
+  align-items: center;
+  /* 요소들을 세로로 중앙 정렬 */
+  flex: 1;
+}
+
+.box2 img {
+  margin-right: 10px;
+  /* 이미지 오른쪽 여백 */
+  max-width: 100px;
+  /* 이미지 최대 너비 */
+  height: auto;
+  /* 이미지 높이 자동 조정 */
+}
+
+.box3 {
+  display: flex;
+  /* 요소들을 가로로 배열하기 위해 Flexbox 사용 */
+  align-items: center;
+  /* 요소들을 세로로 중앙 정렬 */
+  flex: 1;
+}
+
+.box3 img {
+  margin-right: 10px;
+  /* 이미지 오른쪽 여백 */
+  max-width: 100px;
+  /* 이미지 최대 너비 */
+  height: auto;
+  /* 이미지 높이 자동 조정 */
+}
+
+.box4 {
+  display: flex;
+  /* 요소들을 가로로 배열하기 위해 Flexbox 사용 */
+  align-items: center;
+  /* 요소들을 세로로 중앙 정렬 */
+  flex: 1;
+}
+
+.box4 img {
+  margin-right: 10px;
+  /* 이미지 오른쪽 여백 */
+  max-width: 100px;
+  /* 이미지 최대 너비 */
+  height: auto;
+  /* 이미지 높이 자동 조정 */
+}

@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('image/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0; 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.board-title {
+    margin: 10% auto 3%;
+    text-align: center;
+}
+.board-table {
+    margin: 0 auto;
+    width: 65%;
+    border-collapse: collapse;
+}
+.board-table th,
+.board-table td {
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+.board-table th {
+    background-color: #EFEFEF;
+    color: #212529;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.board-table tr:last-child td {
+    border-bottom: 1px solid black;
+}
+
+.board-table tr:hover {
+    background-color: #dddfe2;
+}
+
+.board-table th:nth-child(1), .board-table td:nth-child(1) {
+    width: 5%;
+}
+
+.board-table th:nth-child(2), .board-table td:nth-child(2) {
+    width: 20%;
+}
+
+.board-table th:nth-child(3), .board-table td:nth-child(3) {
+    width: 50%;
+}
+
+.board-table th:nth-child(4), .board-table td:nth-child(4) {
+    width: 15%;
+}
+
+.board-table th:nth-child(5), .board-table td:nth-child(5) {
+    width: 10%;
+    text-align: center;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination .page-item {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.pagination .page-link {
+    text-decoration: none;
+    color: black;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.pagination .page-link:hover {
+    background-color: #f0f0f0;
+}
+
+input[type="submit"] {
+    padding: 5px;
+    border: 1px solid #96B6CA;
+    border-radius: 3px;
+    background-color: #B6D7EB;
+    color: #8C8C8C;
+    cursor: pointer;
+    width: 60px;
+    margin-right: 80px;
+}
