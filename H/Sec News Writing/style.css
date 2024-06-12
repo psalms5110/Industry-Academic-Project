@@ -1,75 +1,71 @@
-/* 이미지 스타일 */
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  padding: 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.cate,
 .home-image {
-  float: left;
-  /* 왼쪽으로 치우치도록 설정 */
-  margin-right: 20px;
-  /* 이미지 오른쪽 여백 추가 */
   width: 50px;
-  height: 50px;
-  /* 이미지의 높이를 자동으로 조정합니다. */
+  height: auto;
+  margin-right: 10px;
 }
 
-.cate {
-  float: left;
-  /* 왼쪽으로 치우치도록 설정 */
-  margin-right: 20px;
-  margin-left: 10px;
-  /* 이미지 오른쪽 여백 추가 */
-  width: 50px;
-  height: 50px;
-  /* 이미지의 높이를 자동으로 조정합니다. */
-}
-
-/* 프로필 이미지 오른쪽 */
-.profile-image {
-  margin-left: 10px;
-  width: 50px;
-  height: 50px;
-}
-
-/* 검색창 스타일 */
 .search-container {
-  float: right;
-  padding: 14px 20px;
-  flex: 8;
+  display: flex;
+  align-items: center;
 }
 
-.search-container input[type=text] {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
+.search-container input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
 }
 
 .search-container button {
-  padding: 6px 10px;
-  margin-top: 8px;
-  background: #ddd;
-  font-size: 17px;
+  padding: 8px 16px;
+  background-color: #7D7D7D;
+  color: white;
   border: none;
+  border-radius: 4px;
   cursor: pointer;
 }
 
-.search-container button:hover {
-  background: #ccc;
+.profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.note input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
 }
 
-/* 
-.box-container{
-  width: 70%;
-  margin: auto;
-  display: grid;
-  grid-template-rows: repeat(26,40px);
-  gap: 10px;
-}
-.box-container2{
-  width: 70%;
-  margin: auto;
-  display: grid;
-  grid-template-rows: repeat(10,40px);
-  gap: 10px;
-} */
-form {
-  width: 70%;
-  margin: auto;
+.save button {
+  background-color: #CFE1EB;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
 }
