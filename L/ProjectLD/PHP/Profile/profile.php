@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>프로필 관리</title>
-<link rel="stylesheet" href="css/profile.css">
+<link rel="stylesheet" href="../styles/profile.css">
 </head>
 <body>
     <div class="title-container">

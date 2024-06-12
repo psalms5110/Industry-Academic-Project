@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>User Profile Page</title>
-    <link href="css/mypage.css" rel="stylesheet">
+    <link href="../styles/mypage.css" rel="stylesheet">
 </head>
 <body>
     <div class="profile-container">

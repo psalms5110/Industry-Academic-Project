@@ -2,7 +2,7 @@
 $host = 'localhost';
 $dbname = 'post';
 $username = 'root';
-$password = 'ares123';
+$password = '0524';
 $perPage = 10;
 
 $conn = new mysqli($host, $username, $password, $dbname);
@@ -32,7 +32,7 @@ $result = $conn->query($sql);
 <head>
     <meta charset="UTF-8">
     <title>작성한 게시글 관리</title>
-    <link href="css/post_management.css" rel="stylesheet">
+    <link href="../styles/post_management.css" rel="stylesheet">
 </head>
 <body>
 <h2 class="board-title">[작성한 게시글 관리]</h2>

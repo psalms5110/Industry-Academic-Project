@@ -9,7 +9,7 @@
 <body>
     <div class="container"> <!-- 웹페이지의 전체 컨텐츠를 감싸는 컨테이너 -->
         <div class="logo"> <!-- 로고 이미지를 담는 부분 -->
-            <img src="css/image/logo.png" alt="TEST INDEX"> <!-- 로고 이미지 삽입 및 대체 텍스트 설정. 이미지가 로드되지 않았거나 이미지를 지원하지 않는 환경이라면, 대체로 텍스트가 표시됨. -->
+            <img src="/image/logo.png" alt="TEST INDEX"> <!-- 로고 이미지 삽입 및 대체 텍스트 설정. 이미지가 로드되지 않았거나 이미지를 지원하지 않는 환경이라면, 대체로 텍스트가 표시됨. -->
         </div>
 
         <div class="search-container"> <!-- 검색창에 관한 컨테이너 -->
@@ -20,8 +20,8 @@
         </div>
 
         <div class="button-container"> <!-- 로그인 및 회원가입 버튼을 담는 컨테이너 -->
-            <button onclick="location.href='/HTMLandPHP/login/login.php'" class="button">로그인</button> <!-- 로그인 페이지 주소 및 이동 버튼 -->
-            <button onclick="location.href='/HTMLandPHP/signup/signup.php'" class="button">회원가입</button> <!-- 회원가입 페이지 주소 및 이동 버튼 -->
+            <button onclick="location.href='/PHP/login/login.php'" class="button">로그인</button> <!-- 로그인 페이지 주소 및 이동 버튼 -->
+            <button onclick="location.href='/PHP/signup/signup.php'" class="button">회원가입</button> <!-- 회원가입 페이지 주소 및 이동 버튼 -->
         </div>
     </div>
 </body>

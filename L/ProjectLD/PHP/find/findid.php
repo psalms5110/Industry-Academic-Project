@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Find ID</title>
-    <link href="../css/findid.css" rel="stylesheet">
+    <link href="../styles/findid.css" rel="stylesheet">
 </head>
 <body> 
     <div class="container">

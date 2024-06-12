@@ -1,8 +1,8 @@
 <?php
 $host = 'localhost';
 $dbname = 'member';
-$username = 'root';
-$password = 'ares123';
+$username = 'signupuser';
+$password = 'signupuser1234';
 
 $conn = new mysqli($host, $username, $password, $dbname);
 
@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <title>회원 가입</title>
-    <link href="css/signup.css" rel="stylesheet">
+    <link href="../styles/signup.css" rel="stylesheet">
 </head>
 <body>
 

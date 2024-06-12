@@ -3,8 +3,8 @@ session_start();
 
 $host = 'localhost';
 $dbname = 'member';
-$username = 'root';
-$password = 'ares123';
+$username = 'loginuser';
+$password = 'a001';
 
 $conn = new mysqli($host, $username, $password, $dbname);
 
@@ -43,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <link href="../css/login.css" rel="stylesheet">
+    <link href="../styles/login.css" rel="stylesheet">
 </head>
 <body> 
 <div class="login-container">
