@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>PW 재설정</title>
-    <link href="../styles/resetpw.css" rel="stylesheet">
+    <link href="../../styles/resetpw.css" rel="stylesheet">
   </head>
   <body>
     <form action="resetpw.php" method="POST">

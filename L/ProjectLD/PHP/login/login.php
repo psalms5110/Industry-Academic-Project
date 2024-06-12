@@ -43,12 +43,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <link href="../styles/login.css" rel="stylesheet">
+    <link href="../../styles/login.css" rel="stylesheet">
 </head>
 <body> 
 <div class="login-container">
     <div class="logo">
-            <img src="../css/image/loginlogo.png" alt="ARES 로고">
+            <img src="../image/loginlogo.png" alt="ARES 로고">
             <div id="login_wrap" class="wrap">   
         <form class="login-form" action="login.php" method="post">
             <input type="text" name="id" placeholder="ID" required>
@@ -60,9 +60,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </form> 
 </div>
         <div class="link-container">
-        <a href="findid.php">ID 찾기</a> |
-        <a href="findpw.php">PW 찾기</a> |
-        <a href="signup.php">회원가입</a>
+        <a href="../find/findid.php">ID 찾기</a> |
+        <a href="../find/findpw.php">PW 찾기</a> |
+        <a href="../signup/signup.php">회원가입</a>
 </div>
 </body>
 </html>

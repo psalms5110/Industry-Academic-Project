@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <title>회원 가입</title>
-    <link href="../styles/signup.css" rel="stylesheet">
+    <link href="../../styles/signup.css" rel="stylesheet">
 </head>
 <body>
 

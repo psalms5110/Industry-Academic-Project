@@ -32,7 +32,7 @@ $result = $conn->query($sql);
 <head>
     <meta charset="UTF-8">
     <title>작성한 게시글 관리</title>
-    <link href="../styles/post_management.css" rel="stylesheet">
+    <link href="../../styles/post_management.css" rel="stylesheet">
 </head>
 <body>
 <h2 class="board-title">[작성한 게시글 관리]</h2>

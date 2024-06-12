@@ -54,7 +54,7 @@ $comments = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>작성한 댓글 관리</title>
-    <link href="../styles/comment_management.css" rel="stylesheet">
+    <link href="../../styles/comment_management.css" rel="stylesheet">
 </head>
 <body>
 <div class="container">

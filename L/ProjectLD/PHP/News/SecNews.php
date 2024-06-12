@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>post</title>
-  <link href="../styles/SecNews.css" rel="stylesheet" type="text/css" />
+  <link href="../../styles/SecNews.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
