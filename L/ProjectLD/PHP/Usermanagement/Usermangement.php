@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ares</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../styles/Usermangement.css">
 </head>
 
 <body>
     <div class="wrapper">
         <div class="sidebar">
             <div class="logo-container">
-                <img class="cate" src="cate.png" alt="cate">
-                <img class="home-image" src="home.png" alt="home">
+                <img class="cate" src="image/cate.png" alt="cate">
+                <img class="home-image" src="image/home.png" alt="home">
             </div>
             <div class="sidebar-content">
                 <ul>
@@ -26,11 +26,11 @@
                 </ul>
             </div>
         </div>
-        <div class="main-content"><img class="profile-image" src="profile.png" alt="Profile Image">
+        <div class="main-content"><img class="profile-image" src="image/image/profile.png" alt="Profile Image">
             <div class="table-of-contents">
                 <button class="toc-btn">
                     <div class="re-profile-image-container">
-                        <img class="re-profile-image" src="profile.png" alt="Profile">
+                        <img class="re-profile-image" src="image/image/profile.png" alt="Profile">
                         <div class="username">아이디<br />닉네임</div>
                     </div>
                 </button>
@@ -39,7 +39,7 @@
 
                 <button class="toc-btn">
                     <div class="re-profile-image-container">
-                        <img class="re-profile-image" src="profile.png" alt="Profile">
+                        <img class="re-profile-image" src="image/image/profile.png" alt="Profile">
                         <div class="username">아이디<br />닉네임</div>
                     </div>
                 </button>
@@ -48,7 +48,7 @@
 
                 <button class="toc-btn">
                     <div class="re-profile-image-container">
-                        <img class="re-profile-image" src="profile.png" alt="Profile">
+                        <img class="re-profile-image" src="image/image/profile.png" alt="Profile">
                         <div class="username">아이디<br />닉네임</div>
                     </div>
                 </button>
@@ -57,7 +57,7 @@
 
                 <button class="toc-btn">
                     <div class="re-profile-image-container">
-                        <img class="re-profile-image" src="profile.png" alt="Profile">
+                        <img class="re-profile-image" src="image/image/profile.png" alt="Profile">
                         <div class="username">아이디<br />닉네임</div>
                     </div>
                 </button>
@@ -66,7 +66,7 @@
 
                 <button class="toc-btn">
                     <div class="re-profile-image-container">
-                        <img class="re-profile-image" src="profile.png" alt="Profile">
+                        <img class="re-profile-image" src="image/image/profile.png" alt="Profile">
                         <div class="username">아이디<br />닉네임</div>
                     </div>
                 </button>
@@ -75,7 +75,7 @@
 
                 <button class="toc-btn">
                     <div class="re-profile-image-container">
-                        <img class="re-profile-image" src="profile.png" alt="Profile">
+                        <img class="re-profile-image" src="image/image/profile.png" alt="Profile">
                         <div class="username">아이디<br />닉네임</div>
                     </div>
                 </button>
@@ -84,7 +84,7 @@
 
                 <button class="toc-btn">
                     <div class="re-profile-image-container">
-                        <img class="re-profile-image" src="profile.png" alt="Profile">
+                        <img class="re-profile-image" src="image/image/profile.png" alt="Profile">
                         <div class="username">아이디<br />닉네임</div>
                     </div>
                 </button>
@@ -93,7 +93,7 @@
 
                 <button class="toc-btn">
                     <div class="re-profile-image-container">
-                        <img class="re-profile-image" src="profile.png" alt="Profile">
+                        <img class="re-profile-image" src="image/profile.png" alt="Profile">
                         <div class="username">아이디<br />닉네임</div>
                     </div>
                 </button>
@@ -102,7 +102,7 @@
 
                 <button class="toc-btn">
                     <div class="re-profile-image-container">
-                        <img class="re-profile-image" src="profile.png" alt="Profile">
+                        <img class="re-profile-image" src="image/profile.png" alt="Profile">
                         <div class="username">아이디<br />닉네임</div>
                     </div>
                 </button>
@@ -111,7 +111,7 @@
 
                 <button class="toc-btn">
                     <div class="re-profile-image-container">
-                        <img class="re-profile-image" src="profile.png" alt="Profile">
+                        <img class="re-profile-image" src="image/profile.png" alt="Profile">
                         <div class="username">아이디<br />닉네임</div>
                     </div>
                 </button>
@@ -120,7 +120,7 @@
 
                 <button class="toc-btn">
                     <div class="re-profile-image-container">
-                        <img class="re-profile-image" src="profile.png" alt="Profile">
+                        <img class="re-profile-image" src="image/profile.png" alt="Profile">
                         <div class="username">아이디<br />닉네임</div>
                     </div>
                 </button>
@@ -129,7 +129,7 @@
 
                 <button class="toc-btn">
                     <div class="re-profile-image-container">
-                        <img class="re-profile-image" src="profile.png" alt="Profile">
+                        <img class="re-profile-image" src="image/profile.png" alt="Profile">
                         <div class="username">아이디<br />닉네임</div>
                     </div>
                 </button>
@@ -138,7 +138,7 @@
 
                 <button class="toc-btn">
                     <div class="re-profile-image-container">
-                        <img class="re-profile-image" src="profile.png" alt="Profile">
+                        <img class="re-profile-image" src="image/profile.png" alt="Profile">
                         <div class="username">아이디<br />닉네임</div>
                     </div>
                 </button>
@@ -147,7 +147,7 @@
 
                 <button class="toc-btn">
                     <div class="re-profile-image-container">
-                        <img class="re-profile-image" src="profile.png" alt="Profile">
+                        <img class="re-profile-image" src="image/profile.png" alt="Profile">
                         <div class="username">아이디<br />닉네임</div>
                     </div>
                 </button>
@@ -156,7 +156,7 @@
                 <div class="top-container">
                     <div class="top-left-container">
                         <div class="profile-container1">
-                            <img class="re-profile-image1" src="profile.png" alt="Profile">
+                            <img class="re-profile-image1" src="image/profile.png" alt="Profile">
                             <div class="username-container1">
                                 <div class="username1">닉네임</div>
                                 <div class="user-id1">아이디</div>

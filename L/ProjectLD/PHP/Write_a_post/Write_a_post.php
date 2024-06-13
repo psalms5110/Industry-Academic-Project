@@ -5,20 +5,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Ares</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="../../styles/Write_a_post.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
     <header>
         <div class="header-container">
             <div class="logo-container">
-                <img class="cate" src="cate.png" alt="cate">
-                <img class="home-image" src="home.png" alt="home">
+                <img class="cate" src="image/cate.png" alt="cate">
+                <img class="home-image" src="imgage/home.png" alt="home">
             </div>
             <div class="search-container">
                 <input type="text" placeholder="검색하세요.">
                 <button type="submit">검색</button>
-                <img class="profile-image" src="profile.png" alt="Profile Image">
+                <img class="profile-image" src="image/profile.png" alt="Profile Image">
             </div>
         </div>
     </header>
@@ -52,48 +52,48 @@
             <div class="table-of-contents">
                 <div class="content-list">
                     <div class="content-item">
-                        <img class="con+" src="Add.png" alt="con+">
-                        <img class="con-" src="Minus.png" alt="con-">
+                        <img class="con+" src="image/Add.png" alt="con+">
+                        <img class="con-" src="image/Minus.png" alt="con-">
                         <textarea id="content" name="content" rows="0.5" placeholder="1. 내용 입력" required></textarea>
                     </div>
                     <div class="content-item" style="margin-left: 40px;">
-                        <img class="con+" src="Add.png" alt="con+">
-                        <img class="con-" src="Minus.png" alt="con-">
+                        <img class="con+" src="image/Add.png" alt="con+">
+                        <img class="con-" src="image/Minus.png" alt="con-">
                         <textarea id="content" name="content" rows="0.5" placeholder="1-1. 내용 입력" required></textarea>
                     </div>
                     <div class="content-item" style="margin-left: 40px;">
-                        <img class="con+" src="Add.png" alt="con+">
-                        <img class="con-" src="Minus.png" alt="con-">
+                        <img class="con+" src="image/Add.png" alt="con+">
+                        <img class="con-" src="image/Minus.png" alt="con-">
                         <textarea id="content" name="content" rows="0.5" placeholder="1-2. 내용 입력" required></textarea>
                     </div>
                     <div class="content-item">
-                        <img class="con+" src="Add.png" alt="con+">
-                        <img class="con-" src="Minus.png" alt="con-">
+                        <img class="con+" src="image/Add.png" alt="con+">
+                        <img class="con-" src="image/Minus.png" alt="con-">
                         <textarea id="content" name="content" rows="0.5" placeholder="2. 내용 입력" required></textarea>
                     </div>
                     <div class="content-item" style="margin-left: 40px;">
-                        <img class="con+" src="Add.png" alt="con+">
-                        <img class="con-" src="Minus.png" alt="con-">
+                        <img class="con+" src="image/Add.png" alt="con+">
+                        <img class="con-" src="image/Minus.png" alt="con-">
                         <textarea id="content" name="content" rows="0.5" placeholder="2-1. 내용 입력" required></textarea>
                     </div>
                     <div class="content-item" style="margin-left: 40px;">
-                        <img class="con+" src="Add.png" alt="con+">
-                        <img class="con-" src="Minus.png" alt="con-">
+                        <img class="con+" src="image/Add.png" alt="con+">
+                        <img class="con-" src="image/Minus.png" alt="con-">
                         <textarea id="content" name="content" rows="0.5" placeholder="2-2. 내용 입력" required></textarea>
                     </div>
                     <div class="content-item">
-                        <img class="con+" src="Add.png" alt="con+">
-                        <img class="con-" src="Minus.png" alt="con-">
+                        <img class="con+" src="image/Add.png" alt="con+">
+                        <img class="con-" src="image/Minus.png" alt="con-">
                         <textarea id="content" name="content" rows="0.5" placeholder="3. 내용 입력" required></textarea>
                     </div>
                     <div class="content-item" style="margin-left: 40px;">
-                        <img class="con+" src="Add.png" alt="con+">
-                        <img class="con-" src="Minus.png" alt="con-">
+                        <img class="con+" src="image/Add.png" alt="con+">
+                        <img class="con-" src="image/Minus.png" alt="con-">
                         <textarea id="content" name="content" rows="0.5" placeholder="3-1. 내용 입력" required></textarea>
                     </div>
                     <div class="content-item" style="margin-left: 40px;">
-                        <img class="con+" src="Add.png" alt="con+">
-                        <img class="con-" src="Minus.png" alt="con-">
+                        <img class="con+" src="image/Add.png" alt="con+">
+                        <img class="con-" src="image/Minus.png" alt="con-">
                         <textarea id="content" name="content" rows="0.5" placeholder="3-2. 내용 입력" required></textarea>
                     </div>
 
