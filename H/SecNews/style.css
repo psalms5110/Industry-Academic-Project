@@ -1,6 +1,15 @@
 body {
   font-family: Arial, sans-serif;
+  background-image: url('index2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
 }
+
 
 header {
   padding: 20px;
@@ -19,7 +28,7 @@ header {
 
 .cate,
 .home-image {
-  width: 50px;
+  width: 18px;
   height: auto;
   margin-right: 10px;
 }
@@ -62,6 +71,15 @@ section {
 
 article {
   margin-top: 20px;
+}
+
+.thumb{
+  width: 25px;
+  height: auto;
+}
+.save{
+  width: 28px;
+  height: auto;
 }
 
 .title-container {
