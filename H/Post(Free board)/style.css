@@ -1,5 +1,13 @@
 body {
   font-family: Arial, sans-serif;
+  background-image: url('index2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
 }
 
 header {
@@ -20,7 +28,7 @@ header {
 
 .cate,
 .home-image {
-  width: 50px;
+  width: 18px;
   height: auto;
   margin-right: 10px;
 }
@@ -134,6 +142,14 @@ h3 {
   border-radius: 20px;
 }
 
+.thumb{
+  width: 25px;
+  height: auto;
+}
+.save{
+  width: 28px;
+  height: auto;
+}
 .comment-section{
   background-color: #f1f1f1;
 }
