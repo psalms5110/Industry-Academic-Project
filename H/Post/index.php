@@ -12,13 +12,13 @@
     <header>
         <div class="header-container">
             <div class="logo-container">
-                <img class="cate" src="cate.jpg" alt="cate">
-                <img class="home-image" src="home.jpg" alt="home">
+                <img class="cate" src="cate.png" alt="cate">
+                <img class="home-image" src="home.png" alt="home">
             </div>
             <div class="search-container">
                 <input type="text" placeholder="검색하세요.">
                 <button type="submit">검색</button>
-                <img class="profile-image" src="your-image.jpg" alt="Profile Image">
+                <img class="profile-image" src="profile.png" alt="Profile Image">
             </div>
         </div>
     </header>
@@ -44,7 +44,7 @@
     <section>
         <article>
             <div class="main1">
-                <img class="img1" src="main1.jpg" alt="main1">
+                <img class="img1" src="main.png" alt="main1">
                 <p>hello world! hello world! hello world! hello world! hello world! hello world! hello world!
                     hello world! hello world! hello world! hello world! hello world! hello world! hello world!
                 </p>
@@ -57,7 +57,7 @@
                     whatrudoing
                     whatrudoing whatrudoing whatrudoing whatrudoing whatrudoing whatrudoing whatrudoing whatrudoing
                 </p>
-                <img class="img2" src="main2.jpg" alt="main2">
+                <img class="img1" src="main.png" alt="main2">
                 <ol>
                     <h4 style="color: #656565;">세부내용 1</h4>
                     <p> whatrudoing whatrudoing whatrudoing whatrudoing whatrudoing whatrudoing
@@ -71,8 +71,8 @@
             </div>
         </article>
         <div class="down-buttons">
-            <button><img src="추천.jpg" alt="thumbsup"> 추천</button>
-            <button><img src="저장.jpg" alt="save">저장</button>
+            <button><img class="thumb" src="thumbup.png" alt="thumbsup"> 추천</button>
+            <button><img class="save" src="save.png" alt="save">저장</button>
         </div>
         </article>
     </section>
@@ -85,7 +85,7 @@
         </div>
         <div class="comment-item">
             <div class="re-profile-image-container">
-                <img class="re-profile-image" src="your-image.jpg" alt="Profile">
+                <img class="re-profile-image" src="repro.png" alt="Profile">
             </div>
             <div class="comment-content">
                 <div class="username">닉네임</div>
@@ -102,7 +102,7 @@
         <hr style="margin-top:20px;">
         <div class="comment-item">
             <div class="re-profile-image-container">
-                <img class="re-profile-image" src="your-image.jpg" alt="Profile">
+                <img class="re-profile-image" src="repro.png" alt="Profile">
             </div>
             <div class="comment-content">
                 <div class="username">닉네임</div>
@@ -118,7 +118,7 @@
         <hr style="margin-top:20px;">
         <div class="comment-item">
             <div class="re-profile-image-container">
-                <img class="re-profile-image" src="your-image.jpg" alt="Profile">
+                <img class="re-profile-image" src="repro.png" alt="Profile">
             </div>
             <div class="comment-content">
                 <div class="username">닉네임</div>
@@ -134,7 +134,7 @@
         <hr>
         <div class="comment-item">
             <div class="re-profile-image-container">
-                <img class="re-profile-image" src="your-image.jpg" alt="Profile">
+                <img class="re-profile-image" src="repro.png" alt="Profile">
             </div>
             <div class="comment-content">
                 <div class="username">닉네임</div>
@@ -150,7 +150,7 @@
                 <div class="reply-container">
                     <div class="comment-item">
                         <div class="re-profile-image-container">
-                            <img class="re-profile-image" src="another-image.jpg" alt="Profile">
+                            <img class="re-profile-image" src="repro.png" alt="Profile">
                         </div>
                         <div class="comment-content">
                             <div class="username">답글 작성자</div>
