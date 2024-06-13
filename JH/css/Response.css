@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('image/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0; 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* 컨테이너 너비를 100%로 설정 */
+    max-width: 600px; /* 최대 너비를 설정하여 중앙 정렬 */
+    margin-bottom: 10px; /* 컨테이너와의 간격을 조정 */
+    position: relative;
+}
+
+.inquiry-id {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.response-title {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.response-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* 적절한 너비로 설정 */
+    max-width: 643px; /* 최대 너비를 설정하여 중앙 정렬 */
+    height: 700px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+    width: calc(100% - 20px); /* Adjust width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box; /* Ensure padding is included in the element's width */
+    background-color: #F1F1F1;
+}
+
+.form-group textarea {
+    height: 230px; /* Set a fixed height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    resize: none; /* Disable resize */
+}
