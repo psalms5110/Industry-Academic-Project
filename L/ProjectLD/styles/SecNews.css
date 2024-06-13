@@ -1,37 +1,137 @@
-header{
-    margin: 100px;
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('index2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
 }
-nav {
-    background-color:#cfdff5ee ;
-    width: 100px;
-    height: 500px;
-    float: left;
-    position: sticky;
+
+
+header {
+  padding: 20px;
 }
-section{
-    margin-left:130px;
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-article{
-    margin: 100px;
+
+.logo-container {
+  display: flex;
+  align-items: center;
 }
-/* 프로필 이미지 오른쪽 */
+
+.cate,
+.home-image {
+  width: 18px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-container input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.search-container button {
+  padding: 8px 16px;
+  background-color: #7D7D7D;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 .profile-image {
-    float: right; /* 오른쪽으로 치우치도록 설정 */
-    margin-right: 0px; /* 이미지 오른쪽 여백 추가 */
-    max-width: 50%; /* 이미지의 최대 너비를 지정합니다. */
-    height: auto; /* 이미지의 높이를 자동으로 조정합니다. */
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 10px;
 }
- /* 검색창 스타일 */
- .search-container {
-    float: right;
-    padding: 14px 20px;
-    margin-top: 0px; /* 이미지와의 간격 조정 */
+
+/* 내용 */
+
+section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
-.img1{
-    max-width: 400px;
-    height: auto;
+
+article {
+  margin-top: 20px;
 }
+
+.thumb{
+  width: 25px;
+  height: auto;
+}
+.save{
+  width: 28px;
+  height: auto;
+}
+
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.info {
+  text-align: right;
+  font-size: 16px;
+  color: #777;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  color: #656565;
+}
+
+.img1 {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  display: block;
+  margin: 0 auto;
+
+}
+
 .down-buttons {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.down-buttons button {
+  margin-top: 40px;
+  background-color: #E7F2F8;
+  border: 1px solid #ADADAD;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px;
+  color: #656565;
 }
