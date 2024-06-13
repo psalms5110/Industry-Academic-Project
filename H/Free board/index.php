@@ -12,13 +12,13 @@
   <header>
     <div class="header-container">
       <div class="logo-container">
-        <img class="cate" src="cate.jpg" alt="cate">
-        <img class="home-image" src="home.jpg" alt="home">
+        <img class="cate" src="cate.png" alt="cate">
+        <img class="home-image" src="home.png" alt="home">
       </div>
       <div class="search-container">
         <input type="text" placeholder="검색하세요.">
         <button type="submit">검색</button>
-        <img class="profile-image" src="your-image.jpg" alt="Profile Image">
+        <img class="profile-image" src="profile.png" alt="Profile Image">
       </div>
     </div>
   </header>
@@ -68,7 +68,7 @@
             <a href="#">제목 10</a>
             <img class="attachment-icon" src="ic_pic.gif" alt="첨부이미지">
             <a class="comment-link" href="#">[5]</a>
-            <img class="new-icon" src="ic_new.gif" alt="새글">
+            <img class="new-icon" src="new.png" alt="새글">
           </td>
           <td class="author">글쓴이이름</td>
           <td class="date">2024/01/01</td>
@@ -87,9 +87,9 @@
           <td class="number">9</td>
           <td class="title">
             <a href="#">제목 9</a>
-            <img class="attachment-icon" src="ic_pic.gif" alt="첨부이미지">
+            <img class="attachment-icon" src="new.pngf" alt="첨부이미지">
             <a class="comment-link" href="#">[5]</a>
-            <img class="new-icon" src="ic_new.gif" alt="새글">
+            <img class="new-icon" src="new.png" alt="새글">
           </td>
           <td class="author">글쓴이이름</td>
           <td class="date">2024/01/01</td>
@@ -101,7 +101,7 @@
             <a href="#">제목 8</a>
             <img class="attachment-icon" src="ic_pic.gif" alt="첨부이미지">
             <a class="comment-link" href="#">[5]</a>
-            <img class="new-icon" src="ic_new.gif" alt="새글">
+            <img class="new-icon" src="new.png" alt="새글">
           </td>
           <td class="author">글쓴이이름</td>
           <td class="date">2024/01/01</td>
@@ -113,7 +113,6 @@
             <a href="#">제목 7</a>
             <img class="attachment-icon" src="ic_pic.gif" alt="첨부이미지">
             <a class="comment-link" href="#">[5]</a>
-            <img class="new-icon" src="ic_new.gif" alt="새글">
           </td>
           <td class="author">글쓴이이름</td>
           <td class="date">2024/01/01</td>
@@ -125,7 +124,6 @@
             <a href="#">제목 6</a>
             <img class="attachment-icon" src="ic_pic.gif" alt="첨부이미지">
             <a class="comment-link" href="#">[5]</a>
-            <img class="new-icon" src="ic_new.gif" alt="새글">
           </td>
           <td class="author">글쓴이이름</td>
           <td class="date">2024/01/01</td>
@@ -137,7 +135,6 @@
             <a href="#">제목 5</a>
             <img class="attachment-icon" src="ic_pic.gif" alt="첨부이미지">
             <a class="comment-link" href="#">[5]</a>
-            <img class="new-icon" src="ic_new.gif" alt="새글">
           </td>
           <td class="author">글쓴이이름</td>
           <td class="date">2024/01/01</td>
@@ -149,7 +146,6 @@
             <a href="#">제목 4</a>
             <img class="attachment-icon" src="ic_pic.gif" alt="첨부이미지">
             <a class="comment-link" href="#">[5]</a>
-            <img class="new-icon" src="ic_new.gif" alt="새글">
           </td>
           <td class="author">글쓴이이름</td>
           <td class="date">2024/01/01</td>
@@ -161,7 +157,6 @@
             <a href="#">제목 3</a>
             <img class="attachment-icon" src="ic_pic.gif" alt="첨부이미지">
             <a class="comment-link" href="#">[5]</a>
-            <img class="new-icon" src="ic_new.gif" alt="새글">
           </td>
           <td class="author">글쓴이이름</td>
           <td class="date">2024/01/01</td>
@@ -173,7 +168,6 @@
             <a href="#">제목 2</a>
             <img class="attachment-icon" src="ic_pic.gif" alt="첨부이미지">
             <a class="comment-link" href="#">[5]</a>
-            <img class="new-icon" src="ic_new.gif" alt="새글">
           </td>
           <td class="author">글쓴이이름</td>
           <td class="date">2024/01/01</td>
@@ -185,7 +179,6 @@
             <a href="#">제목 1</a>
             <img class="attachment-icon" src="ic_pic.gif" alt="첨부이미지">
             <a class="comment-link" href="#">[5]</a>
-            <img class="new-icon" src="ic_new.gif" alt="새글">
           </td>
           <td class="author">글쓴이이름</td>
           <td class="date">2024/01/01</td>
@@ -196,14 +189,14 @@
   </main>
 
   <div style="margin-top: 100px;"></div>
-  <div class="pagination">
+  <div class="pagination" >
     <a href="#">&laquo;</a>
     <a href="#" class="active">1</a>
     <a href="#">2</a>
     <a href="#">3</a>
     <a href="#">4</a>
     <a href="#">5</a>
-    <a href="#">&raquo;</a>
+    <a href="#" style="margin-bottom: 100px;">&raquo;</a>
   </div>
 </body>
 
