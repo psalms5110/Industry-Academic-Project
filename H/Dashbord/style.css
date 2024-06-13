@@ -1,0 +1,301 @@
+/* 전체 레이아웃 */
+body {
+  margin: 0;
+  /* 전체 여백 제거 */
+  padding: 0;
+  /* 전체 여백 제거 */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.cate,
+.home-image {
+  width: 18px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 10px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+/* 사이드바 스타일 */
+.sidebar {
+  width: 200px;
+  height: 180%;
+  background-color: #DAE3E9;
+  padding: 20px;
+  /* 내부 여백 유지 */
+}
+
+.sidebar h2 {
+  color: #696969;
+  margin-top: 0;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  color: #696969;
+}
+
+a.not-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+a.not-link:hover {
+  text-decoration: none;
+}
+
+
+/* 메인 콘텐츠 스타일 */
+.main-content {
+  height: 180%;
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #F6F6F6;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  height: 200px;
+  /* 카드 높이 150px로 설정 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* 부모 요소에 relative 설정 */
+}
+.card2 {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* 부모 요소에 relative 설정 */
+}
+.top-left-text {
+  font-size: 12px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #656565;
+}
+
+.donut-chart-container {
+  display: flex;
+  align-items: center; /* 그래프와 범례 수직 정렬 */
+}
+
+.donut-chart {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: 50%;
+  background-image: conic-gradient(
+    #E57676 0% 40%,
+    #FAC281 0% 70%,
+    #FAE083 0% 78%,
+    #BFFD82 0% 88%,
+    #82F89C 0% 100%
+  );
+}
+
+.legend {
+  display: flex;
+  margin: 20px; /* 그래프와 범례 사이 간격 */
+}
+
+.legend-item {
+  display: flex;
+  flex-direction: column; /* 범례 항목을 세로로 정렬 */
+  align-items: center;
+  margin-right: 20px; /* 범례 항목 사이 간격 */
+}
+
+.legend-color {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 5px; /* 색상 박스와 라벨 사이 간격 */
+}
+
+.legend-label {
+  font-size: 10px;
+}
+
+.graph{
+  align-items: center;
+  padding: 40px;
+  padding-right:20px;
+}
+
+.stats-card {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  height: 200px;
+}
+
+.stats-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  border-right: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.stats-item:nth-child(3n) {
+  border-right: none;
+}
+
+.stats-item:nth-child(4),
+.stats-item:nth-child(5),
+.stats-item:nth-child(6) {
+  border-bottom: none;
+}
+
+.label {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.value {
+  font-size: 26px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+.wide-card {
+  border-radius: 10px;
+  height: 250px;
+  /* 카드 높이 150px로 설정 */
+  grid-column: span 2;
+  background-color: #ffffff;
+  padding: -20px;
+  text-align: center;
+  position: relative;
+}
+
+.donut-chart-container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.donut-chart2 {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: 50%;
+  background-image: conic-gradient(
+    #ADADAD 0% 62.80%,
+    #8ABCD8 0% 85.67%,
+    #F9B0B0 0% 100%
+  );
+}
+
+.legend2-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.legend2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.legend-item2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.legend-color2 {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.legend-label2 {
+  font-size: 12px;
+}
+
+.user-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.user-card {
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  border: 1px solid #E0E0E0;
+  padding: 5px;
+  text-align: center;
+}
+
+.user-image {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+.user-info {
+  flex: 1;
+}
+
+.user-id, .visit, .user-email, .user-posts {
+  text-align: center;
+  font-size: 10px;
+  color: #666;
+  margin-bottom: 5px;
+}
