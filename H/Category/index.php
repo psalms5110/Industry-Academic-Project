@@ -1,109 +1,152 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>ARES</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Layout Example</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
   <header>
-    <!-- 이미지 -->
-    <img class="cate" src="cate.jpg" alt="cate">
-    <img class="home-image" src="home.jpg" alt="home">
-
-    <!-- 검색창 -->
-    <div class="search-container">
-      <input type="text" placeholder="검색하세요.">
-      <button type="submit">검색</button>
-      <img class="profile-image" src="your-image.jpg" alt="Profile Image">
-    </div>
+      <div class="header-container">
+          <div class="logo-container">
+              <img class="cate" src="cate.png" alt="cate">
+              <img class="home-image" src="home.png" alt="home">
+          </div>
+          <div class="search-container">
+              <input type="text" placeholder="검색하세요.">
+              <button type="submit">검색</button>
+              <img class="profile-image" src="profile.png" alt="Profile Image">
+          </div>
+      </div>
   </header>
-  <!-- 네비게이션 바 -->
   <nav>
     <ul>
-      <li><a href="#application-home">애플리케이션 보안</a></li>
+      <li style="border-left: 1px solid #96B6CA;"><a href="#application-home">애플리케이션 보안</a></li>
       <li><a href="#network-home">네트워크 보안</a></li>
-      <li><a href="#forensic-home">포렌식</a></li>
-      <li style="float:right"><a href="#profile">프로필</a></li>
-      <li style="float:right"><a class="active" href="#about">About</a></li>
+      <li style="border-right: 1px solid #96B6CA;"><a href="#forensic-home">포렌식</a></li>
     </ul>
   </nav>
-  <article>
-    <!-- 자유게시판 목록 -->
-    <div class="left-container">
-      <h2>자유게시판</h2>
-      <div class="container-free">
-        <div class="m1">
-          <img class="m1-image" src="m1.png" alt="m1-image">
-          <h4>제목1</h4>
-          <p>요약내용</p>
+  
+  <div class="container1">
+    <div class="row1">
+      <div class="col1">
+        <div class="title1">
+          <div class="title">[ 자유게시판 ]</div>
+          <img class="plus" src="plus.png" alt="Image">
         </div>
-        <div class="m2">
-          <img class="m2-image" src="m2.png" alt="m2-image">
-          <h4>제목2</h4>
-          <p>요약내용</p>
-        </div>
-        <div class="m3">
-          <img class="m3-image" src="m3.png" alt="m3-image">
-          <h4>제목3</h4>
-          <p>요약내용</p>
-        </div>
-      </div>
-    </div>
-    <!-- 신규게시글 목록 -->
-    <div class="right-container">
-      <h2>신규게시글</h2>
-      <div class="container-post">
-        <div id="box1">
-          <img class="m1-image" src="m1.png" alt="m1-image">
-          <h4>제목1</h4>
-          <p>요약내용</p>
-        </div>
-        <div id="box2">
-          <img class="m2-image" src="m2.png" alt="m2-image">
-          <h4>제목2</h4>
-          <p>요약내용</p>
-        </div>
-        <div id="box3">
-          <img class="m3-image" src="m3.png" alt="m3-image">
-          <h4>제목3</h4>
-          <p>요약내용</p>
+        <div class="grid-container">
+          <div class="grid">
+          <img src="post.png" alt="Image">
+          <div class="grid-item">
+            <div class="item1-2-info">
+              <div class="item1-2-title">제목</div>
+              <div class="item1-2-summary">요약 내용</div>
+            </div></div>
+            <div class="item1-2-views">조회수 n회</div></div><hr class="short-hr">
+          <div class="grid">
+            <img src="post.png" alt="Image">
+            <div class="grid-item">
+              <div class="item1-2-info">
+                <div class="item1-2-title">제목</div>
+                <div class="item1-2-summary">요약 내용</div>
+              </div></div>
+              <div class="item1-2-views">조회수 n회</div></div><hr class="short-hr">
+          <div class="grid">
+            <img src="post.png" alt="Image">
+            <div class="grid-item">
+              <div class="item1-2-info">
+                <div class="item1-2-title">제목</div>
+                <div class="item1-2-summary">요약 내용</div>
+              </div></div>
+              <div class="item1-2-views">조회수 n회</div></div>
         </div>
       </div>
     </div>
+    <div class="row2">
+      <div class="col">
+        <div class="title1">
+          <div class="title">[ 신규게시글 ]</div>
+          <img class="plus" src="plus.png" alt="Image">
+        </div>
+        <div class="grid-container">
+          <div class="grid">
+            <img src="post.png" alt="Image">
+            <div class="grid-item">
+              <div class="item1-2-info">
+                <div class="item1-2-title">제목</div>
+                <div class="item1-2-summary">요약 내용</div>
+              </div></div>
+            <div class="item1-2-info">
+              <div class="item1-2-views">조회수 n회</div>
+            <div class="item1-2-post">자유게시판</div>
+            </div>
+          </div><hr class="short-hr">
+            <div class="grid">
+              <img src="post.png" alt="Image">
+              <div class="grid-item">
+                <div class="item1-2-info">
+                  <div class="item1-2-title">제목</div>
+                  <div class="item1-2-summary">요약 내용</div>
+                </div></div>
+              <div class="item1-2-info">
+                <div class="item1-2-views">조회수 n회</div>
+              <div class="item1-2-post">네트워크 보안</div>
+              </div>
+            </div><hr class="short-hr">
+            <div class="grid">
+              <img src="post.png" alt="Image">
+              <div class="grid-item">
+                <div class="item1-2-info">
+                  <div class="item1-2-title">제목</div>
+                  <div class="item1-2-summary">요약 내용</div>
+                </div>
+              </div>
+              <div class="item1-2-info">
+                <div class="item1-2-views">조회수 n회</div>
+              <div class="item1-2-post">포렌식</div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container2">
+    <div class="row3">
+      <div class="title2">
+      <div class="title-news">[ 보안 뉴스 ]</div>
+      <img class="right-image" src="plus.png" alt="Image">
+      </div>
+    </div>
+    <div class="row4">
+      <div class="grid-container2">
+        <div class="grid-item2" style="
+          border-right: 1px solid #ccc;">
+          <img src="news.png" alt="이미지">
+          <p1>제목</p1><hr>
+          <p2>요약 내용</p2><hr>
+        </div>
+        <div class="grid-item2" style="
+          border-right: 1px solid #ccc;">
+          <img src="news.png" alt="이미지">
+          <p1>제목</p1><hr>
+          <p2>요약 내용</p2><hr>
+        </div>
+        <div class="grid-item2" style="
+          border-right: 1px solid #ccc;">
+          <img src="news.png" alt="이미지">
+          <p1>제목</p1><hr>
+          <p2>요약 내용</p2><hr>
+        </div>
+        <div class="grid-item2">
+          <img src="news.png" alt="이미지">
+          <p1>제목</p1><hr>
+          <p2>요약 내용</p2><hr>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- 보안뉴스 목록 -->
-    <div class="sec">
-      <h2>보안뉴스</h2>
-      <div class="container-news">
-        <div id="box1">
-          <img class="m1-image" src="m1.png" alt="m1-image">
-          <h4>제목1</h4>
-          <p>요약내용</p>
-        </div>
-        <div id="box2">
-          <img class="m2-image" src="m2.png" alt="m2-image">
-          <h4>제목2</h4>
-          <p>요약내용</p>
-        </div>
-        <div id="box3">
-          <img class="m3-image" src="m3.png" alt="m3-image">
-          <h4>제목3</h4>
-          <p>요약내용</p>
-        </div>
-        <div id="box4">
-          <img class="m4-image" src="m4.png" alt="m4-image">
-          <h4>제목4</h4>
-          <p>요약내용</p>
-        </div>
-      </div>
-    </div>
-  </article>
-  <footer></footer>
-  <script src="script.js"></script>
-</body>
 
-</html>
+  </body>
+  </html>
