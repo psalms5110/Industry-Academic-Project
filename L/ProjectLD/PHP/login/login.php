@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $_SESSION['username'] = $row['username'];
             $_SESSION['id'] = $row['id'];
 
-            header("Location: board.php");
+            header("Location: ../Category/Category.php");
             exit;
         } else {
             echo "<script>alert('비밀번호가 일치하지 않습니다.'); window.location.href='login.php';</script>";
