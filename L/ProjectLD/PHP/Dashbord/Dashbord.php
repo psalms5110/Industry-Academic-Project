@@ -12,8 +12,8 @@
     <div class="wrapper">
         <div class="sidebar">
             <div class="logo-container">
-                <img class="cate" src="cate.png" alt="cate">
-                <img class="home-image" src="home.png" alt="home">
+                <img class="cate" src="image/cate.png" alt="cate">
+                <img class="home-image" src="image/home.png" alt="home">
             </div>
             <div class="sidebar-content">
                 <ul>
@@ -26,7 +26,7 @@
                 </ul>
             </div>
         </div>
-        <div class="main-content"><img class="profile-image" src="profile.png" alt="Profile Image">
+        <div class="main-content"><img class="profile-image" src="image/profile.png" alt="Profile Image">
             <h2>DashBoard</h2>
             <div class="card-container">
                 <div class="card">
@@ -91,7 +91,7 @@
                 </div>
                 <div class="wide-card">
                     <div class="top-left-text"><b>일일 방문자 통계</b></div>
-                    <img class="graph" src="graph.png" alt="graph">
+                    <img class="graph" src="image/graph.png" alt="graph">
                 </div>
                 <div class="card2">
                     <div class="top-left-text"><b>방문자 통계</b></div>
@@ -126,7 +126,7 @@
                     <div class="top-left-text"><b>주 이용자 통계</b></div>
                     <div class="user-list">
                         <div class="user-card">
-                            <img class="user-image" src="profile.png" alt="User Image">
+                            <img class="user-image" src="image/profile.png" alt="User Image">
                             <div class="user-info">
                                 <div class="user-id"><b>ID</b></div>
                                 <div class="visit"> 방문 수 : n회</div>
@@ -135,7 +135,7 @@
                             </div>
                         </div>
                         <div class="user-card">
-                            <img class="user-image" src="profile.png" alt="User Image">
+                            <img class="user-image" src="image/profile.png" alt="User Image">
                             <div class="user-info">
                                 <div class="user-id"><b>ID</b></div>
                                 <div class="visit"> 방문 수 : n회</div>
@@ -144,7 +144,7 @@
                             </div>
                         </div>
                         <div class="user-card">
-                            <img class="user-image" src="profile.png" alt="User Image">
+                            <img class="user-image" src="image/profile.png" alt="User Image">
                             <div class="user-info">
                                 <div class="user-id"><b>ID</b></div>
                                 <div class="visit"> 방문 수 : n회</div>
@@ -153,7 +153,7 @@
                             </div>
                         </div>
                         <div class="user-card">
-                            <img class="user-image" src="profile.png" alt="User Image">
+                            <img class="user-image" src="image/profile.png" alt="User Image">
                             <div class="user-info">
                                 <div class="user-id"><b>ID</b></div>
                                 <div class="visit"> 방문 수 : n회</div>
@@ -162,7 +162,7 @@
                             </div>
                         </div>
                         <div class="user-card">
-                            <img class="user-image" src="profile.png" alt="User Image">
+                            <img class="user-image" src="image/profile.png" alt="User Image">
                             <div class="user-info">
                                 <div class="user-id"><b>ID</b></div>
                                 <div class="visit"> 방문 수 : n회</div>
@@ -171,7 +171,7 @@
                             </div>
                         </div>
                         <div class="user-card">
-                            <img class="user-image" src="profile.png" alt="User Image">
+                            <img class="user-image" src="image/profile.png" alt="User Image">
                             <div class="user-info">
                                 <div class="user-id"><b>ID</b></div>
                                 <div class="visit"> 방문 수 : n회</div>
@@ -180,7 +180,7 @@
                             </div>
                         </div>
                         <div class="user-card">
-                            <img class="user-image" src="profile.png" alt="User Image">
+                            <img class="user-image" src="image/profile.png" alt="User Image">
                             <div class="user-info">
                                 <div class="user-id"><b>ID</b></div>
                                 <div class="visit"> 방문 수 : n회</div>
@@ -189,7 +189,7 @@
                             </div>
                         </div>
                         <div class="user-card">
-                            <img class="user-image" src="profile.png" alt="User Image">
+                            <img class="user-image" src="image/profile.png" alt="User Image">
                             <div class="user-info">
                                 <div class="user-id"><b>ID</b></div>
                                 <div class="visit"> 방문 수 : n회</div>

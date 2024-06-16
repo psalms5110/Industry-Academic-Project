@@ -6,7 +6,7 @@
     <link href="../../styles/findpw2.css" rel="stylesheet">
   </head>
   <body>
-    <form action="resetpw.php" method="POST">
+    <form action="../resetpw/resetpw.php" method="POST">
       <div class="container">
         <h1>PW 재설정</h1>
           <div class="new_password">

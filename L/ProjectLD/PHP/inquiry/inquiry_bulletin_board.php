@@ -65,7 +65,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <title>문의 게시판</title>
-    <link href="css/inquiry_bulletin_board.css" rel="stylesheet">
+    <link href="../../styles/inquiry_bulletin_board.css" rel="stylesheet">
     </head>
 <body>
 <h2 class="board-title">[문의 게시판]</h2>

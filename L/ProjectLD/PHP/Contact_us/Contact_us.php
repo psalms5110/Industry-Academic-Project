@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <title>문의 작성</title>
-    <link href="css/Contact_us.css" rel="stylesheet">
+    <link href="../../styles/Contact_us.css" rel="stylesheet">
 </head>
 <body>
 <div class="contact-container">

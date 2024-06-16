@@ -5,20 +5,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>ares</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="../../styles/Freeboard.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
   <header>
     <div class="header-container">
       <div class="logo-container">
-        <img class="cate" src="cate.png" alt="cate">
-        <img class="home-image" src="home.png" alt="home">
+        <img class="cate" src="image/cate.png" alt="cate">
+        <img class="home-image" src="image/home.png" alt="home">
       </div>
       <div class="search-container">
         <input type="text" placeholder="검색하세요.">
         <button type="submit">검색</button>
-        <img class="profile-image" src="profile.png" alt="Profile Image">
+        <img class="profile-image" src="image/profile.png" alt="Profile Image">
       </div>
     </div>
   </header>
@@ -68,7 +68,7 @@
             <a href="#">제목 10</a>
             <img class="attachment-icon" src="ic_pic.gif" alt="첨부이미지">
             <a class="comment-link" href="#">[5]</a>
-            <img class="new-icon" src="new.png" alt="새글">
+            <img class="new-icon" src="image/new.png" alt="새글">
           </td>
           <td class="author">글쓴이이름</td>
           <td class="date">2024/01/01</td>
@@ -87,9 +87,9 @@
           <td class="number">9</td>
           <td class="title">
             <a href="#">제목 9</a>
-            <img class="attachment-icon" src="new.pngf" alt="첨부이미지">
+            <img class="attachment-icon" src="image/new.pngf" alt="첨부이미지">
             <a class="comment-link" href="#">[5]</a>
-            <img class="new-icon" src="new.png" alt="새글">
+            <img class="new-icon" src="image/new.png" alt="새글">
           </td>
           <td class="author">글쓴이이름</td>
           <td class="date">2024/01/01</td>
@@ -101,7 +101,7 @@
             <a href="#">제목 8</a>
             <img class="attachment-icon" src="ic_pic.gif" alt="첨부이미지">
             <a class="comment-link" href="#">[5]</a>
-            <img class="new-icon" src="new.png" alt="새글">
+            <img class="new-icon" src="image/new.png" alt="새글">
           </td>
           <td class="author">글쓴이이름</td>
           <td class="date">2024/01/01</td>

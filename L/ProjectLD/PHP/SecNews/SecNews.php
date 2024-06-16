@@ -5,20 +5,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Ares</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="../../styles/SecNews.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
   <header>
     <div class="header-container">
       <div class="logo-container">
-        <img class="cate" src="cate.png" alt="cate">
-        <img class="home-image" src="home.png" alt="home">
+        <img class="cate" src="image/cate.png" alt="cate">
+        <img class="home-image" src="image/home.png" alt="home">
       </div>
       <div class="search-container">
         <input type="text" placeholder="검색하세요.">
         <button type="submit">검색</button>
-        <img class="profile-image" src="profile.png" alt="Profile Image">
+        <img class="profile-image" src="image/profile.png" alt="Profile Image">
       </div>
     </div>
   </header>
@@ -34,7 +34,7 @@
       </div>
       <hr>
       <h3 style="color:#656565;">보안 뉴스 부제목</h3>
-      <img class="img1" style="color:#656565;"" src="main1.png" alt="main1">
+      <img class="img1" style="color:#656565;" src="image/main1.png" alt="main1">
       <p>whatrudoing whatrudoing whatrudoing whatrudoing whatrudoing whatrudoing whatrudoing whatrudoing whatrudoing
         whatrudoing whatrudoing whatrudoing whatrudoing whatrudoing whatrudoing whatrudoing whatrudoing</p>
       <p>whatrudoing whatrudoing whatrudoing whatrudoing whatrudoing whatrudoing whatrudoing whatrudoing whatrudoing
@@ -42,8 +42,8 @@
       <p>whatrudoing whatrudoing whatrudoing whatrudoing whatrudoing whatrudoing whatrudoing whatrudoing whatrudoing
         whatrudoing whatrudoing whatrudoing whatrudoing whatrudoing whatrudoing whatrudoing whatrudoing</p>
       <div class="down-buttons">
-        <button><img class="thumb" src="thumbup.png" alt="thumbsup"> 추천</button>
-        <button><img class="save" src="save.png" alt="save">저장</button>
+        <button><img class="thumb" src="image/thumbup.png" alt="thumbsup"> 추천</button>
+        <button><img class="save" src="image/save.png" alt="save">저장</button>
       </div>
     </article>
   </section>
