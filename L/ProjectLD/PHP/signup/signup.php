@@ -2,7 +2,7 @@
 $host = 'localhost';
 $dbname = 'member';
 $username = 'signupuser';
-$password = 'signupuser1234';
+$password = 'b001';
 
 $conn = new mysqli($host, $username, $password, $dbname);
 
