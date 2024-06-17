@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
 
-            $mail->setFrom('your-email@gmail.com', 'Mailer');
+            $mail->setFrom('psalms51100@gmail.com', 'Mailer');
             $mail->addAddress($email);
 
             $mail->isHTML(true);
@@ -91,6 +91,35 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <title>회원 가입</title>
     <link href="../../styles/signup.css" rel="stylesheet">
+    <script>
+        // 사용자의 이메일로 인증 코드를 전송하는 함수
+        function sendVerificationCode() {
+            var email = document.getElementById('email').value; // 이메일 입력 필드에서 이메일 값을 가져옴
+            var xhr = new XMLHttpRequest(); // 새로운 XMLHttpRequest 객체를 생성
+            xhr.open('POST', 'signup.php', true); // signup.php로 POST 요청 초기화
+            xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded'); // 요청 헤더 설정
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4 && xhr.status == 200) { // 요청이 완료되고 성공적인지 확인
+                    document.getElementById('verification-status').innerText = xhr.responseText; // 서버 응답을 표시
+                }
+            };
+            xhr.send('send_verification=1&email=' + email); // 이메일 파라미터와 함께 요청 전송
+        }
+
+        // 사용자가 입력한 코드를 검증하는 함수
+        function verifyCode() {
+            var code = document.getElementById('verification_code').value; // 인증 코드 입력 필드에서 값을 가져옴
+            var xhr = new XMLHttpRequest(); // 새로운 XMLHttpRequest 객체를 생성
+            xhr.open('POST', 'signup.php', true); // signup.php로 POST 요청 초기화
+            xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded'); // 요청 헤더 설정
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4 && xhr.status == 200) { // 요청이 완료되고 성공적인지 확인
+                    document.getElementById('verification-status').innerText = xhr.responseText; // 서버 응답을 표시
+                }
+            };
+            xhr.send('verify_code=1&verification_code=' + code); // 인증 코드 파라미터와 함께 요청 전송
+        }
+    </script>
 </head>
 <body>
 
@@ -105,4 +134,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <div class="form-group-email">
             <input type="email" id="email" name="email" placeholder="E-Mail" required>
-            <button type="submit" name="send_verification">본
+            <button type="button" onclick="sendVerificationCode()">본인 확인 코드 전송</button>
+        </div>
+
+        <div class="verification-container">
+            <input type="text" id="verification_code" name="verification_code" placeholder="Verification Code">
+            <button type="button" onclick="verifyCode()">코드 확인</button>
+            <div id="verification-status"></div>
+        </div>
+
+        <button type="submit" name="submit">회원 가입</button>
+    </form>
+</div>
+
+</body>
+</html>
